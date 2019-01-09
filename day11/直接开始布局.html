@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>直接开始布局</title>
+</head>
+<body>
+<div style="display: flex;justify-content: center">
+    <div class="left">
+        <div class="box">
+            <div class="left-a">1</div>
+            <div class="left-a">2</div>
+            <div class="left-a">3</div>
+            <div class="left-a">4</div>
+            <div class="left-a">5</div>
+            <div class="left-a">6</div>
+            <div class="left-a">7</div>
+            <div class="left-a">8</div>
+            <div class="left-a">9</div>
+            <div class="left-a">10</div>
+            <div class="left-a">11</div>
+            <div class="left-a">12</div>
+        </div>
+
+    </div>
+    <div class="right"></div>
+</div>
+
+<style>
+    .left {
+        width: 223px;
+        height: 500px;
+        background: white;
+        border: 1px solid black;
+    }
+
+    .box {
+        width: 223px;
+        height: 178px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .left-a {
+        width: 39px;
+        height: 39px;
+        border: 3px solid orange;
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right {
+        width: 700px;
+        height: 500px;
+        background: #a9fff8;
+    }
+</style>
+</body>
+</html>

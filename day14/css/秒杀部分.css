@@ -1,0 +1,75 @@
+.skill-a {
+    height: 275px;
+    width: 190px;
+    background: #e83632;
+    float: left;
+}
+
+.jd-a {
+    width: 190px;
+    color: #fff !important;
+    text-align: center;
+    font-size: 34px;
+}
+
+.jd-b {
+    width: 190px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 20px;
+}
+
+.jd-c {
+    width: 190px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+.skill-b {
+    width: 800px;
+    height: 275px;
+    float: left;
+    position: relative;
+}
+.skill-b ul{
+    display: -webkit-inline-box;
+}
+
+.skill-b li{
+    float: left;
+    width: 200px;
+    list-style-type: none;
+    position: relative;
+}
+.skill-b img{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 40px;
+}
+.skill-b p{
+    position: absolute;
+    top: 190px;
+    left: 0;
+    width: 160px;
+    padding: 0 15px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center
+}
+
+.skill-b span{
+    position: absolute;
+    left: 15px;
+    top: 230px;
+    width: 160px;
+    height: 20px;
+    padding: 1px;
+    background: #e6382f;
+    line-height: 20px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta data-n-head="true" name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>实战知乎登陆页面</title>
+</head>
+<body>
+<div class="content">
+    <div class="content-a">
+        <span style="font-size: 30px;color: #c7ced4">×</span> <span>免密码登陆</span>
+    </div>
+    <div class="content-b">
+        <h2>密码登陆</h2>
+    </div>
+    <div class="content-c">
+        <input placeholder="手机号或邮箱" style="height: 30px;    border-radius: 5px;">
+        <input placeholder="密码" style="height: 30px;border-radius: 5px;">
+    </div>
+     <!--a-                c布局-->
+    <div class="content-d">
+        <a href="#" style="text-decoration: none;color: white">登陆</a>
+    </div>
+    <div class="content-e">
+        <span>海外手机号登陆</span> <span>需要帮助</span>
+    </div>
+    <div class="content-f">
+        <span>其他登陆方式</span>
+    </div>
+    <div class="content-g">
+        <img src="timg.jpg" style="width: 55px;border-radius: 28px;">
+        <img src="timg%20(1).jpg" style="width: 55px;border-radius: 28px;">
+        <img src="timg%20(2).jpg" style=" width: 55px; border-radius: 28px;">
+    </div>
+</div>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        width: 300px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-a {
+        width: 274px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-b {
+        position: absolute;
+        top: 60px;
+    }
+    .content-c{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    .content-d{
+        height: 36px;
+        width: 250px;
+        background: #3a9fbf;
+        text-align: center;
+        border-radius: 5px;
+        position: relative;
+        bottom: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-e {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 142px;
+        color: gray;
+    }
+    .content-f{
+        position: relative;
+        top: 67px;
+        color: gray;
+    }
+
+    .content-g {
+        width: 250px;
+        height: 53px;
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
+</body>
+</html>

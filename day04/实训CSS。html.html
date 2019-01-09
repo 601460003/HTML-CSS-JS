@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模拟CSS教学页面</title>
+</head>
+<body>
+<div class="header" >
+    <a href="http://zh.learnlayout.com/">
+        <img src="logo.jpg" alt="CSS">
+        <span>学习CSS布局</span>
+    </a>
+</div>
+
+
+<style>
+    .header {
+        background:gainsboro;
+        /*元素会占据你所指定的宽度，然后剩余的宽度会一分为二成为左右外边距。*/
+        /*width: 600px;*/
+        /*margin: 0 auto*/
+        text-align: center;
+    }
+    .header a {
+        text-decoration: none;
+    }
+    /*这种表达header下的所有SPAN/a 都会按照样式改变*/
+    .header span {
+        position: relative;
+        top: -48px;
+        left: 11px;
+        font-size: 24px;
+
+
+    }
+
+
+
+</style>
+</body>
+</html>

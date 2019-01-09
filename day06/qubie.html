@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>margin和padding区别</title>
+</head>
+<body>
+<div class="margin">呦呦奶茶</div>
+<div class="content">
+    <div class="padding">统一奶茶</div>
+</div>
+
+
+<style>
+    .margin{
+        width: 400px;
+        height: 300px;
+        background: #6AC5AC;
+        float: right;
+        padding-top: 10px;
+        box-sizing: border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+
+
+    }
+
+    .content{
+        width: 450px;
+        height: 500px;
+        background: #6AC5AC;
+        float: bottom;
+        position: relative;
+        top: 500px;
+        box-sizing: border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+    }
+    /*position：absolute这个是绝对定位；*/
+    /*是相对于浏览器的定位。*/
+    /*比如：position：absolute；left:20px;top:80px; 这个容器始终位于距离浏览器左20px,距离浏览器上80px的这个位置。*/
+    /*position：relative是相对定位，是相对于前面的容器定位的。这个时候不能用top left在定位。应该用margin。*/
+    /*比如：<div class="1"></div><div class="2"></div>*/
+                                             /*当1固定了位置。1的样式float:left;width:100px; height:800px;*/
+    /*2的样式为float:left; position：relative；margin-left:20px;width:50px;*/
+    /*2的位置在1的右边，距离120px*/
+
+    .padding{
+        width: 400px;
+        height: 300px;
+        background: #8ab375;
+        margin-top: 10px;
+        float: right;
+        position: relative;
+        top: 200px;
+        right: 0
+        box-sizing: border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+
+    }
+
+
+</style>
+</body>
+</html>
