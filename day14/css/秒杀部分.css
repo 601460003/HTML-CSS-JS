@@ -1,3 +1,8 @@
+.jd-skill{
+    text-align: center;
+    width: 1190px;
+    margin: 0 auto;
+}
 .skill-a {
     height: 275px;
     width: 190px;
@@ -6,10 +11,9 @@
 }
 
 .jd-a {
-    width: 190px;
     color: #fff !important;
-    text-align: center;
     font-size: 34px;
+    margin-top: 40px;
 }
 
 .jd-b {
@@ -20,22 +24,18 @@
 }
 
 .jd-c {
-    width: 190px;
+    margin-top: 70px;
     color: #fff;
-    text-align: center;
     font-size: 16px;
 }
 
+/*左边完成*/
+
 .skill-b {
-    width: 800px;
     height: 275px;
     float: left;
     position: relative;
 }
-.skill-b ul{
-    display: -webkit-inline-box;
-}
-
 .skill-b li{
     float: left;
     width: 200px;
@@ -43,33 +43,63 @@
     position: relative;
 }
 .skill-b img{
-    position: absolute;
     width: 140px;
     height: 140px;
-    left: 50%;
-    transform: translate(-50%,0);
-    top: 40px;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 .skill-b p{
-    position: absolute;
-    top: 190px;
-    left: 0;
-    width: 160px;
-    padding: 0 15px;
-    line-height: 30px;
+    color: #666;
+    font-size: 13px;
+    line-height: 50px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     text-align: center
 }
 
-.skill-b span{
+.price{
     position: absolute;
     left: 15px;
     top: 230px;
-    width: 160px;
-    height: 20px;
-    padding: 1px;
     background: #e6382f;
+    padding: 1px;
     line-height: 20px;
+}
+.price-new{
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    width: 80px;
+}
+.price-old{
+    font-size: 12px;
+    color: #b7bcb8;
+    background: white;
+    float: left;
+    width: 80px;
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.skill-d{
+    position: absolute;
+    top: 218px;
+    margin-left: 30px;
+}
+.skill-d span{
+    float: left;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #2f3430;
 }
