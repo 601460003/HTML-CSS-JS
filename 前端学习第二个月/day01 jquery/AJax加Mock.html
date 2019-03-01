@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="ajax">asdasdasd</div>
+<script>
+
+    $.get("https://www.easy-mock.com/mock/5c4d1d64857c7f670bc96ad0/zzw/getbox", function (data, status) {
+        // document.getElementById('ajax').innerText = JSON.stringify(              data)
+        var data = data.data;
+        alert(data)
+        var str = '';
+            for (var i in data) {
+            str = str + i + "<br/>";
+        }
+        document.getElementById('ajax').innerText= str;
+    });
+
+
+</script>
+</body>
+</html>

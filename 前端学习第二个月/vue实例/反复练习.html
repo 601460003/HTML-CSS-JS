@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="price" @click="NB(shop)">
+    {{price|currency('wo de ')}}
+</div>
+
+<script>
+    Vue.filter('currency',function (val,unit) {
+        val=val||0;
+        unit=unit||'元';
+        return val +unit
+    })
+
+
+
+
+
+    new Vue({
+        el:'#app',
+        data:{
+            price:10,
+            shop:10,
+        },
+        methods:{
+            NB(NB){
+                alert(NB)
+            }
+        }
+    })
+</script>
+</body>
+</html>

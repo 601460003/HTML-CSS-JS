@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <arrter></arrter>
+</div>
+
+<script>
+    Vue.component('arrter',{
+        template:'<button @click="onclick">蛋蛋蛋<button/>',
+        methods:{
+            onclick:function () {
+                alert('蛋蛋蛋');
+            }
+        }
+    });
+
+    var arrter_component = {                                      //定义一个方法保存在变量里面
+        template: '<button @click="onclick">蛋蛋蛋</button>',
+        methods: {
+            onclick: function () {
+                alert('蛋蛋蛋');
+            }
+        }
+    };
+
+            var app = new Vue({
+                el: '#app',
+                components: {
+                    arrter: arrter_component
+                }
+            })
+</script>
+</body>
+</html>

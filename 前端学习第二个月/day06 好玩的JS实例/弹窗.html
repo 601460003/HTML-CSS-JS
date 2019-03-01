@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- 打开弹窗按钮 -->
+<div style="text-align: center; padding-top: 200px;display: flex;justify-content: space-around">
+    <button id="myBtn">2019年</button>
+    <button id="myBtn">猪年大吉</button>
+    <button id="myBtn">新年快乐</button>
+</div>
+
+
+<!-- 弹窗 -->
+<div id="myModal" class="modal">
+
+    <!-- 弹窗内容 -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>又是一年春节到，提早给你拜个年：祝你在新的一年里身体健健康康，事业顺顺利利，爱情甜甜蜜蜜，家庭和和睦睦。</p>
+        <p>新春佳节到，天蓬元帅送祝福：一送健康身体棒，二送好运心欢畅；三送福禄不可挡，四送幸福万年长！</p>
+        <p>祝你胃口比猪好；睡得比猪早；烦恼比猪少！提前给你拜年了：愿你猪年心想事成。</p>
+    </div>
+</div>
+
+<style>
+    /* 弹窗 (background) */
+    .modal {
+        display: none; /* 默认隐藏 */
+        position: fixed; /* 固定定位 */
+        z-index: 1; /* 设置在顶层 */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    /* 弹窗内容 */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* 关闭按钮 */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #myBtn{
+        width: 300px;
+        height: 40px;
+        background: #d43f3a;
+        color: #fff;
+        font-family: 微软雅黑;
+        font-size: 20px;
+    }
+
+</style>
+
+<script>
+    // 获取弹窗
+    var modal = document.getElementById('myModal');
+
+    // 打开弹窗的按钮对象
+    var btn = document.getElementById("myBtn");
+
+    // 获取 <span> 元素，用于关闭弹窗
+    var span = document.querySelector('.close');
+
+    // 点击按钮打开弹窗
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // 点击 <span> (x), 关闭弹窗
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // 在用户点击其他地方时，关闭弹窗
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+</script>
+</body>
+</html>

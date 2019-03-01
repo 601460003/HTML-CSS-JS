@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body style="background: black;font-size: 50px">
+<img id="hour" src="img/0.jpg"/>
+<img id="hour2" src="img/0.jpg"/>
+:
+<img id="min" src="img/0.jpg"/>
+<img id="min2" src="img/0.jpg"/>
+:
+<img id="se" src="img/0.jpg"/>
+<img id="se2" src="img/0.jpg"/>
+
+<script>
+    // $(document).ready(function () {
+    //
+    //     $("#hour").attr("src","img/"+X+".jpg");
+    //
+    // });
+
+
+
+    setInterval(function () {
+        var time=new Date();
+        var shi=time.getHours();
+        if (shi<10){
+            $("#hour").attr("src","img/"+0+".jpg");
+            $("#hour2").attr("src","img/"+shi+".jpg");
+        } else{
+            shi=shi+'';
+            $("#hour").attr("src","img/"+shi.charAt(0)+".jpg");
+            $("#hour2").attr("src","img/"+shi.charAt(1)+".jpg");
+        }
+
+    },1000);
+</script>
+</body>
+</html>

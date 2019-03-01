@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+<head>
+    <script>
+        function timedText(){
+            var x=document.getElementById('txt');
+            var t1=setTimeout(function(){x.value="2 秒"},2000);
+            var t2=setTimeout(function(){x.value="333秒"},4000);
+            var t3=setTimeout(function(){x.value="333秒"},6000);
+            var t4=setTimeout(function(){x.value="333秒给我吗？"},8000);
+            var t5=setTimeout(function(){x.value="333秒"},10000);
+            var t6=setTimeout(function(){x.value="333秒"},12000);
+            var t7=setTimeout(function(){x.value="333秒"},14000);
+            var t8=setTimeout(function(){x.value="333秒"},16000);
+            var t9=setTimeout(function(){x.value="333秒"},18000);
+
+        }
+    </script>
+</head>
+<body>
+
+<form>
+    <input type="button" value="点我试试" onclick="timedText()" />
+    <input type="text" id="txt" />
+</form>
+</body>
+
+</html>

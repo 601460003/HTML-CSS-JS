@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发现-知乎</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js"></script>
+
+</head>
+<body>
+<!--导航区-->
+<div class="nav-container">
+    <div class="container-nav">
+        <!--搜索框-->
+        <div class="nav-left fl">
+            <div class="nav-search ">
+                <input type="text" placeholder="搜索你感兴趣的内容...">
+                <button></button>
+            </div>
+            <div class="nav-txt ">
+                <span><a href="#">首页</a></span>
+                <span><a href="#">话题</a></span>
+                <span><a href="#">发现</a></span>
+            </div>
+        </div>
+        <!--注册知乎登陆-->
+        <div class="nav-right fl">
+            <button>提问</button>
+            <span style="padding-left: 15px"><a class="nav-right-a" href="#">注册知乎</a></span>
+            <span><a href="#">登陆</a></span>
+        </div>
+    </div>
+</div>
+<!--内容部分-->
+<div class="main-container">
+    <div class="container-main">
+        <div class="main-left fl" id="host">
+            <div class="news">
+                <div class="news-header">
+                    <span class="news-header-top">编辑推荐</span>
+                    <span> <a class="more fr" href="#">更多推荐 »</a></span>
+                </div>
+                <!--内容部分-->
+                <div class="news-main">
+                    <h3><a class="main-color" href="#">怪物猎人世界的生态系统是怎么样的？</a></h3>
+                    <div class="news-pic">
+                        <img class=" fl" style="width: 38px" src="./img/touxiang.jpg"/>
+                        <div class="news-title">
+                            <span><a class="news-name" href="#">安德莉娅</a></span>
+                            <span class="news-name-b">, 大学生/暴雪死忠粉/steam用户/游戏玩家</span>
+                        </div>
+                        <div class="news-passage">
+                            <img class=" fl" src="./img/touxiang1.jpg"/>
+                            <p>
+                                MHW：设定上是每个地图（森林/荒地/台地/瘴气谷）都有一个生态顶点，分别是：<b>雄火龙、角龙、风漂龙、惨爪龙。</b>以及存在两个乱入单位，分别是<b>恐暴龙和爆鳞龙，</b>在这之上存在的被称为古龙，所到之处即为天灾的龙类，分别是：<b>钢龙、炎王龙、炎妃龙、麒麟、尸套龙…</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                、
+                <!--内容部分-->
+                <div class="main-passage">
+                    <div class="main-passage-div">
+                        <span class=" fr">问答</span>
+                        <span><a class="main-color" href="#">如何看待 NBA 知名记者爆料「安东尼已被球队告知他的火箭生涯即将结束」?</a></span>
+                    </div>
+                    <div class="main-passage-div">
+                        <span class=" fr">问答</span>
+                        <span><a class="main-color" href="#">中国古建筑的结构和设计理念能否应用到现代建筑领域？</a></span>
+                    </div>
+                    <div class="main-passage-div">
+                        <span class=" fr">问答</span>
+                        <span><a class="main-color" href="#">如何评价《刀塔自走棋》1 月 26 日版本更新？新英雄如何使用？哪些套路会在新版本火起来？</a></span>
+                    </div>
+                    <div>
+                        <span class=" fr">问答</span>
+                        <span><a class="main-color" href="#">如何评价任天堂新公布的《Metroid Prime 4》开发情况？</a></span>
+                    </div>
+                </div>
+            </div>
+            <!--热点部分-->
+
+            <div class="hots-header" style="padding: 10px 0">
+                <h3>今日最热 本月最热</h3>
+            </div>
+            <div id="insertHost"></div>
+            <!--<div class="news-hots">-->
+                <!--<div   id="hots" class="hots-passage">-->
+                    <!--<h3 class="main-color-a"><a class="main-color js-title" href="#">如何评价长江十年禁渔令？</a></h3>-->
+                    <!--<div class="hots-dianz fl">-->
+                        <!--<a class="hots-dianz-a" href="#">461</a>-->
+                    <!--</div>-->
+                    <!--<div class="hots-conter fl">-->
+                        <!--<div>-->
+                            <!--<a class="news-name" href="#">青檀,</a>-->
+                            <!--<span class="news-name-b"> 生科狗，n项全能，不学无术</span>-->
+                        <!--</div>-->
+                        <!--<div class="hots-p">-->
+                            <!--<p><a class="hots-pass js-content" href="#">一直有关注长江生态尤其是淡水豚保护，也去长江安徽段考察过几次，说两句。-->
+                                <!--首先，我国淡水水产养殖规模早已远远超过野捕，长江全面禁渔对淡水水产市场供给侧的负面影响很小很小，反而有助于统一标准，规范市场。而正面影响就十分显著了。首先是对渔民。随…-->
+                                <!--<span class="show">显示全部</span></a></p>-->
+                        <!--</div>-->
+                        <!--<div class="hots-span">-->
+                            <!--<span class="hots-bull"><a href="#">关注问题</a></span>-->
+                            <!--<span class="hots-bull1"><a href="#">41条评论</a></span>-->
+                            <!--<span class="zg-bull"><a>•</a></span>-->
+                            <!--<span id="zuozhe" class="zg-bull"><a href="#">作者保留全权利</a></span>-->
+                            <!--&lt;!&ndash;隐藏部分&ndash;&gt;-->
+                            <!--<span  class=" none"><a href="#">感谢</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">分享</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">收藏</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">感谢</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">分享</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">收藏</a></span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;热点第二&ndash;&gt;-->
+            <!--<div class="news-hots">-->
+                <!--<div  id="hots1" class="hots-passage">-->
+                    <!--<h3 class="main-color-a"><a class="main-color js-titlea" href="#">为什么金闪闪受欢迎得到了大众的接受，爆豪受欢迎却一直成为争议点呢？</a></h3>-->
+                    <!--<div class="hots-dianz fl">-->
+                        <!--<a class="hots-dianz-a" href="#">248</a>-->
+                    <!--</div>-->
+                    <!--<div class="hots-conter fl">-->
+                        <!--<div>-->
+                            <!--<a class="news-name" href="#">梅大林,</a>-->
+                            <!--<span class="news-name-b"> 学而不厌，诲人不倦</span>-->
+                        <!--</div>-->
+                        <!--<div class="hots-p">-->
+                            <!--<p><a class="hots-pass js-contenta" href="#">首先，金闪闪真的受欢迎得到大众接受了吗？-->
+                                <!--答案当然是否定的，直到今天，吉尔伽美什依然是一个争议不断的角色，君不见b站弹幕和评论区逢闪必撕？-->
+                                <!--金闪闪和爆豪这两个角色都是一种很经典且好用的反派形象，简而言之就是两个字，“帅”和“坏”。各类动画中…-->
+                                <!--<span class="show">显示全部</span></a></p>-->
+                        <!--</div>-->
+                        <!--<div class="hots-span">-->
+                            <!--<span class="hots-bull"><a href="#">关注问题</a></span>-->
+                            <!--<span class="hots-bull1"><a href="#">88条评论</a></span>-->
+                            <!--<span class="zg-bull"><a>•</a></span>-->
+                            <!--<span id="zuozhe1" class="zg-bull"><a href="#">作者保留全权利</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">感谢</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">分享</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">收藏</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">感谢</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">分享</a></span>-->
+                            <!--<span  class="hots-bull1 none"><a href="#">收藏</a></span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;热点三&ndash;&gt;-->
+            <!--<div class="news-hots-tow">-->
+                <!--<div class="hots-passage">-->
+                    <!--<h3 class="main-color-a"><a class="main-color js-titleaa" href="#">有哪些让人受益无穷的好习惯？</a></h3>-->
+                    <!--<div class="hots-dianz fl">-->
+                        <!--<a class="hots-dianz-a" href="#">2489</a>-->
+                    <!--</div>-->
+                    <!--<div class="hots-conter fl">-->
+                        <!--<div>-->
+                            <!--<a class="news-name" href="#">半 夏,</a>-->
+                            <!--<span class="news-name-b">  公众号：半夏酱 来找我玩叭</span>-->
+                        <!--</div>-->
+                        <!--<div class="hots-p">-->
+                            <!--<img style="padding: 10px 0" class=" fl" src="./img/hots1.jpg"/>-->
+                            <!--<p><a class="hots-pass js-contenaat" href="#">-->
+                                <!--现在应该是寒假了叭~这里分享一些我自己的习惯，很容易上手的哒。学生党寒假学起来呀 1. 成长篇1）.记录时间-->
+                                <!--可以尝试去做这样的一张表格——把一天分割为30min，然后记录每个30min自己在做什么。坚持一周下来，你会对自己的时间花在哪里有一个全新的认识。-->
+                                <!--<span class="show">显示全部</span></a></p>-->
+                        <!--</div>-->
+                        <!--<div class="hots-span" style="clear: both">-->
+                            <!--<span class="hots-bull"><a href="#">关注问题</a></span>-->
+                            <!--<span class="hots-bull1"><a href="#">88条评论</a></span>-->
+                            <!--<span class="zg-bull"><a>•</a></span>-->
+                            <!--<span class="zg-bull"><a href="#">作者保留全权利</a></span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;热点四&ndash;&gt;-->
+            <!--<div class="news-hots-tow">-->
+                <!--<div class="hots-passage">-->
+                    <!--<h3 class="main-color-a"><a class="main-color js-titleaaa" href="#">鱼露是什么？</a></h3>-->
+                    <!--<div class="hots-dianz fl">-->
+                        <!--<a class="hots-dianz-a" href="#">1250</a>-->
+                    <!--</div>-->
+                    <!--<div class="hots-conter fl">-->
+                        <!--<div>-->
+                            <!--<a class="news-name" href="#">识食务者,</a>-->
+                            <!--<span class="news-name-b">讲科学的硬核吃货一枚 | 公众号“识食务…</span>-->
+                        <!--</div>-->
+                        <!--<div class="hots-p">-->
+                            <!--<img style="padding: 10px 5px" class=" fl" src="./img/hots2.jpg"/>-->
+                            <!--<p><a class="hots-pass js-contentaaa" href="#">-->
+                                <!--现在应该是寒假了叭~这里分享一些我自己的习惯，很容易上手的哒。学生党寒假学起来呀 1. 成长篇1）.记录时间-->
+                                <!--可以尝试去做这样的一张表格——把一天分割为30min，然后记录每个30min自己在做什么。坚持一周下来，你会对自己的时间花在哪里有一个全新的认识。-->
+                                <!--<span class="show">显示全部</span></a></p>-->
+                        <!--</div>-->
+                        <!--<div class="hots-span" style="clear: both">-->
+                            <!--<span class="hots-bull"><a href="#">关注问题</a></span>-->
+                            <!--<span class="hots-bull1"><a href="#">88条评论</a></span>-->
+                            <!--<span class="zg-bull"><a>•</a></span>-->
+                            <!--<span class="zg-bull"><a href="#">作者保留全权利</a></span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;热点五&ndash;&gt;-->
+            <!--<div class="news-hots-last">-->
+                <!--<div class="hots-passage">-->
+                    <!--<h3 class="main-color-a"><a class="main-color js-titleaaaa" href="#">为什么万有引力定律、库伦定律都是平方反比？平方反比有什么含义吗？</a></h3>-->
+                    <!--<div class="hots-dianz fl">-->
+                        <!--<a class="hots-dianz-a" href="#">998</a>-->
+                    <!--</div>-->
+                    <!--<div class="hots-conter fl">-->
+                        <!--<div>-->
+                            <!--<a class="news-name" href="#">张大林,</a>-->
+                            <!--<span class="news-name-b">唯有通过科学 方可认识世界</span>-->
+                        <!--</div>-->
+                        <!--<div class="hots-p">-->
+                            <!--<p><a class="hots-pass js-contentaaaa" href="#">-->
+                                <!--如多位答主所指出的那样：正因为我们观察到的宇宙是3维的，所以两个物体之间的引力大小才与它们距离的平方成反比。假设我们用“力线”来表示地球对周围物体的引力：从地球中心向四周均匀分布着力线。力线的密度越高（穿透一定面积的线数越多），则表示该处…-->
+                                <!--<span class="show">显示全部</span></a></p>-->
+                        <!--</div>-->
+                        <!--<div class="hots-span">-->
+                            <!--<span class="hots-bull"><a href="#">关注问题</a></span>-->
+                            <!--<span class="hots-bull1"><a href="#">88条评论</a></span>-->
+                            <!--<span class="zg-bull"><a>•</a></span>-->
+                            <!--<span class="zg-bull"><a href="#">作者保留全权利</a></span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--显示更多-->
+            <div class="hots-more" style="padding-top: 30px">
+                <a href="#">更多</a>
+            </div>
+        </div>
+        <!--下面是内容的右边部分-->
+        <div class="main-right fl">
+            <div class="main-right-title">
+                <span><a href="#">下载知乎App</a></span>
+            </div>
+            <img src="./img/guanggao.jpg"/>
+            <!--热门圆桌-->
+            <div class="main-right-hots">
+                <div class="main-right-more">
+                    <span class="remen">热门圆桌</span>
+                    <span> <a class="more fr" href="#">更多圆桌»</a></span>
+                </div>
+                <div class="guanzhu">
+                    <div class="main-touxiang fl">
+                        <img src="./img/shangbanzu.jpg"/>
+                    </div>
+                    <span><a class="shangbanzu" href="#">拯救上班「卒」</a></span>
+                    <div class="geren">
+                        <span>3391 人关注</span>
+                        <span>•</span>
+                        <span>87 个问题</span>
+                    </div>
+                </div>
+                <!--第二个圆桌-->
+                <div class="guanzhu" style="margin-top: 10px">
+                    <div class="main-touxiang fl" style="clear: both">
+                        <img src="./img/dushu.jpg"/>
+                    </div>
+                    <span><a class="shangbanzu" href="#">2019 科技将改变什么</a> </span>
+                    <div class="geren">
+                        <span>2781 人关注 </span>
+                        <span>•</span>
+                        <span>25 个问题</span>
+                    </div>
+                </div>
+            </div>
+            <!--第三个圆桌-->
+            <div class="main-right-hots">
+                <div class="main-right-more">
+                    <span class="remen">热门话题</span>
+                    <span> <a class="more fr" href="#">更多话题»</a></span>
+                </div>
+                <div class="guanzhu">
+                    <div class="main-touxiang fl">
+                        <img src="./img/jieqi.jpg"/>
+                    </div>
+                    <span><a class="shangbanzu" href="#">节气</a></span>
+                    <div class="geren">
+                        <span>4992 人关注</span>
+
+                    </div>
+                </div>
+                <!--第四个圆桌-->
+                <div class="guanzhu" style="margin-top: 10px">
+                    <div class="main-touxiang fl" style="clear: both">
+                        <img src="./img/shenqi.jpg"/>
+                    </div>
+                    <span><a class="shangbanzu" href="#">神器</a> </span>
+                    <div class="geren">
+                        <span>27813 人关注 </span>
+                    </div>
+                </div>
+                <!--第五个圆桌-->
+                <div class="guanzhu" style="margin-top: 10px">
+                    <div class="main-touxiang fl" style="clear: both">
+                        <img src="./img/jiqiren.jpg"/>
+                    </div>
+                    <span><a class="shangbanzu" href="#">机器学习</a> </span>
+                    <div class="geren">
+                        <span>99876 人关注 </span>
+                    </div>
+                </div>
+                <!--热门收藏-->
+                <div class="main-right-more">
+                    <span class="remen">热门收藏</span>
+                    <span> <a class="more fr" href="#">换一换</a></span>
+                </div>
+                <div class="remenshouchang">
+                    <a href="#">数学笔记</a>
+                    <p>73 人关注 • 180 条内容</p>
+                </div>
+                <div class="remenshouchang">
+                    <a href="#">不能错过</a>
+                    <p>233 人关注 • 105 条内容</p>
+                </div>
+                <div class="remenshouchang">
+                    <a href="#">有意思的东西</a>
+                    <p>265 人关注 • 1205 条内容</p>
+                </div>
+                <div class="remenshouchang">
+                    <a href="#">没什么分类</a>
+                    <p>29 人关注 • 179 条内容</p>
+                </div>
+                <div class="remenshouchang">
+                    <a href="#">可执行性知识</a>
+                    <p>90 人关注 • 82 条内容</p>
+                </div>
+            </div>
+            <!--版权区-->
+            <div class="banquanqu">
+                <a href="#">刘看山</a>
+                <span>•</span>
+                <a href="#">移动应用</a>
+                <span>•</span>
+                <a href="#">加入知乎</a>
+                <span>•</span>
+                <a href="#">知乎协议</a>
+            </div>
+            <div class="banquanqu">
+                <a href="#">举报投诉</a>
+                <span>•</span>
+                <a href="#">隐私政策</a>
+                <span>•</span>
+                <a href="#">联系我们</a>
+                <span>© 2019 知乎</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/zhihu.js"></script>
+</body>
+</html>

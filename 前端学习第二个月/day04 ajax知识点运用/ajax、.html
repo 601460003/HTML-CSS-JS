@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+
+<body>
+<div id="insert">
+
+
+</div>
+<script>
+
+    $.get("https://www.easy-mock.com/mock/5c4fc422640e0719f990b501/api/v1/all", function (data) {
+
+        var list = data.data.list;
+        var str = '';
+
+        for (var i = 0; i < list.length; i++) {
+            str = str + JSON.stringify(list[i]);
+            console.log(str.title)
+        }
+        $('#insert').text(list[0].title);
+
+    });
+
+
+</script>
+
+</body>
+</html>

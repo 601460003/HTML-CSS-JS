@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+    <title>技术的东西万变不里其中</title>
+</head>
+<body>
+<div id="app">
+    <input type="text"  v-model="price">
+{{price|currency()}}
+</div>
+
+
+<!--一看到价格就想到过滤器 然后定义一个过滤器组件的方法-->
+<!--然后把传参定义在function里面 return返回一个值-->
+<!--慢慢完善过滤器 此时需要定义val的内容了-->
+<!--猜想结果多种可能，把静态变成动态的东西，继续传参数-->
+<!--这是后currency（里面就可以传任何东西了）-->
+<!--meter也可以-->
+<script>
+    Vue.filter('currency',function (val,unit) {
+        val=val||0;
+        unit=unit||'元';
+   return val+unit
+    });
+
+    new Vue({
+        el:'#app',
+        data:{
+            price:10
+        }
+
+    })
+</script>
+</body>
+</html>

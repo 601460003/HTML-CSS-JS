@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="index"></div>
+<script>
+    $(document).ready(function () {
+
+        $.get("http://rest.apizza.net/mock/5059b9fa5fce2d8f3f80823a3d662c17/all", function (data) {
+            var arr = data.d.entrylist;
+            console.log(arr);
+            var str = '';
+            for (var i = 0; i < arr.length; i++) {
+
+                str=str+'<div class="title-passage">\n' +
+                    '            <a href="#" style="color: #b71ed7">专栏</a>\n' +
+                    '            <span>·</span>\n' +
+                    '            <a href="#">小德</a>\n' +
+                    '            <span>·</span>\n' +
+                    '            <a href="#">5小时前</a>\n' +
+                    '            <span>·</span>\n' +
+                    '            <a href="#">前端</a>\n' +
+                    '            <p>'+arr[i].content+'</p>\n' +
+                    '            <div class="title-btn">\n' +
+                    '                <button><img src="https://b-gold-cdn.xitu.io/v3/static/img/zan.e9d7698.svg">366</button>\n' +
+                    '                <button><img src="https://b-gold-cdn.xitu.io/v3/static/img/comment.4d5744f.svg">211</button>\n' +
+                    '            </div>\n' +
+                    '        </div>'
+            }
+
+            $('#index').html(str);
+        });
+
+    });
+
+
+</script>
+
+
+<style>
+    .title-passage{
+        height: 116px;
+        background: white;
+        width: 600px;
+        line-height: 13px;
+        padding-left: 18px;
+        padding-top: 12px;
+        border-bottom: 1px solid #f3f6f3;
+    }
+    .title-passage p{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 10px;
+    }
+</style>
+</body>
+</html>

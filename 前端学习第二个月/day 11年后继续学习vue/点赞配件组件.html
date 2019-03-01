@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点赞的制作过程vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+
+    <style>
+        .opp{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <like></like>
+</div>
+
+
+
+<script>
+    Vue.component('like',{
+        template:'<button :class="{opp:liked}" @click="toggle">${{like_count}}</button>',
+        data:function () {
+            return{
+                like_count:12,
+                liked:false,
+            }
+        },
+        methods:{
+            toggle:function () {
+                if (!this.liked)
+                this.like_count++;
+                else
+                    this.like_count--;
+
+                this.liked=!this.liked;
+            }
+        }
+    });
+
+    new Vue({
+        el:'#app',
+    })
+
+
+
+</script>
+</body>
+</html>

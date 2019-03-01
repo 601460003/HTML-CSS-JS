@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+    <style>
+        .panel {
+            max-width: 500px;
+            border: 1px solid #999;
+            margin-bottom: 15px;
+        }
+
+        .panel > * {
+            padding: 15px;
+
+        }
+
+        .panel .title {
+            border-bottom: 1px solid #999;
+        }
+
+        .panel .footer {
+            border-top: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <panel>
+        <div slot="title">
+            ni shi da sb
+        </div>
+        <div slot="content">
+            wo shi da sb
+        </div>
+        <div slot="footer">
+            更多
+        </div>
+    </panel>
+    <panel>
+        爱仕达所多
+    </panel>
+    <panel></panel>
+</div>
+
+
+
+<template id="panel-tpl">
+    <div class="panel">
+        <div class="title">
+            <slot name="title"></slot>
+        </div>
+        <div class="content">
+            <slot name="content"></slot>
+        </div>
+        <div class="footer">
+            <slot name="footer"></slot>
+        </div>
+    </div>
+</template>
+
+
+<script>
+    Vue.component('panel', {
+        template: '#panel-tpl ',
+    });
+
+    new Vue({
+        el: '#app',
+        data: {}
+    })
+</script>
+</body>
+</html>

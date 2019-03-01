@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js">
+    </script>
+</head>
+<body>
+<input  id="hide" type="button" value="按钮">
+<input id="show" type="button" value="按钮">
+<div style="width: 300px;height: 300px;background: red;">
+</div>
+<h2>这是一个标题</h2>
+<p style="background-color:#ff0000">这是一个段落。</p>
+<p style="background-color:#00ff00">这是一个段落。</p>
+<p style="background-color:#0000ff">这是一个段落。</p>
+<p>这是一个段落。</p>
+<button>设置 p 元素的 background-color </button>
+
+<script>
+    $(document).ready(function () {
+        // $('#hide').click(function () {
+        //     $('div').hide();
+        //
+        // })
+        // $('#show').click(function () {
+        //     $('div').show();
+        //
+        // })
+
+           // $('#hide').click(function () {
+           //     $('div').toggle();
+           // })
+
+        // $('button').click(function () {
+        //     $('p').css('background-color','red');
+        //     console.log('背景颜色='+$('p').css('background-color'));
+        // })
+
+        $('#hide').click(function () {
+            $('div').css('color','green')
+                .slideDown(3000)
+                .slideUp(2000)
+
+        })
+    })
+</script>
+</body>
+</html>

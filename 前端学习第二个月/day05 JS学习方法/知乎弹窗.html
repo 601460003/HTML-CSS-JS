@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    .top{
+        text-align: center;
+        width: 100%;
+        position: relative;
+
+    }
+
+        .header-img, .header-conten {
+            float: left;
+        }
+
+        .header-img img {
+            margin: 10px 10px 0 0;
+        }
+
+        .header-name-big a {
+            font-size: 14px;
+            color: #259;
+        }
+
+        .header-name span {
+            font-size: 14px;
+            color: black;
+        }
+
+        .footer {
+            clear: both;
+        }
+
+        .footer-conten {
+            display: flex;
+            width: 135px;
+            justify-content: space-between;
+        }
+
+        .footer-conten ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-conten a {
+            text-decoration: none;
+        }
+
+        .footer-num {
+            text-align: center;
+        }
+
+        .footer-a {
+            font-size: 14px;
+            color: black;
+            font-weight: 700;
+        }
+
+        .footer-b {
+            font-size: 14px;
+            color: #999;
+        }
+        .btn button{
+            background: #ff6778;
+            height: 31px;
+        }
+        .btn{
+            margin: 10px 20px 0 10px;
+        }
+        .boss{
+            width: 400px;
+            height: 213px;
+            background: #0ec7ff;
+            padding-left: 18px;
+            position: absolute;
+            right: 580px;
+            top: 70px;
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--头像-->
+<div class="top">
+    <a href="#"><img id="top" src="img/touxiang.jpg"/></a>
+    <p>树嘉生物学话题优秀回答者遗传学博士 | 公众号: 碱基矿工
+        这本是三年多之前我发在公众号上的一篇旧文，一些偶然的机会，发现不少朋友也在讨论这个问题，因此我重新做了梳理并发出来。这样的讨论是有益的，放在今天也不过时，我也愿意和更多的朋友一起进一步讨论这个问题。曾经（2015年），我接触了一个RNA-seq的项…</p>
+</div>
+<!--弹出内容-->
+<div id="boss" class="boss">
+    <div class="header">
+        <div class="header-img">
+            <a href="#"><img src="img/touxiang.jpg"/></a>
+        </div>
+        <div class="header-conten">
+            <div class="header-name-big">
+                <a href="#">黄树嘉 </a>
+            </div>
+            <div class="header-name">
+                <span>遗传学博士 | 公众号: 碱基矿工</span>
+            </div>
+            <div class="header-name">
+                <span>遗传学博士</span>
+            </div>
+            <div class="header-name">
+                <span>生物学话题优秀回答者</span>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <div class="footer-conten">
+            <div class="footer-num">
+                <ul>
+                    <li><a class="footer-a" href="#">54</a></li>
+                    <li><a class="footer-b" href="#">回答</a></li>
+                </ul>
+            </div>
+            <div class="footer-num">
+                <ul>
+                    <li><a class="footer-a" href="#">39</a></li>
+                    <li><a class="footer-b" href="#">文章</a></li>
+                </ul>
+            </div>
+            <div class="footer-num">
+                <ul>
+                    <li><a class="footer-a" href="#">2889</a></li>
+                    <li><a class="footer-b" href="#">关注者</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="btn">
+          <button>邮件</button>
+            <button>关注他</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+   window.onload=function () {
+       var odiv=document.getElementById('top');
+
+       var obtn=document.getElementById('boss');
+
+       var time=null;
+
+
+       obtn.onmouseover=odiv.onmouseover=function () {
+           clearInterval(time);
+           obtn.style.display='block';
+
+       };
+
+       obtn.onmouseout=odiv.onmouseout=function () {
+
+           time=setInterval(function () {
+               obtn.style.display='none';
+           },500)
+       };
+
+
+   }
+
+
+
+</script>
+</body>
+</html>

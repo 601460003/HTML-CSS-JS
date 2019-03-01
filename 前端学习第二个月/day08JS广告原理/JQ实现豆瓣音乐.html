@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <img id="img" src="img/1.jpg" alt="">
+    <button id="btn">躲起来</button>
+    <button id="btn1">出来</button>
+</div>
+<script>
+$('#btn').click(function () {
+    $(this).hide();
+    $('#img').animate({width:'0'},2000,function () {
+        $('#btn1').show();
+    })
+})
+$('#btn1').click(function () {
+    $(this).hide();
+    $('#img').animate({width:'600'},2000,function () {
+        $('#btn').show();
+    })
+})
+</script>
+
+<style>
+    #img{
+        /*display: none;*/
+    }
+</style>
+</body>
+</html>

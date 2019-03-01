@@ -1,0 +1,305 @@
+/*导航CSS*/
+.nav-container {
+    width: 100%;
+    background: #0767c8;
+    position: fixed;
+    top: 0;
+}
+
+.container-nav {
+    width: 960px;
+    height: 46px;
+    margin: 0 auto;
+    line-height: 45px;
+}
+
+.nav-left {
+    width: 660px;
+    height: 45px;
+    display: flex;
+    background: url("../img/zhihu.png") no-repeat 1px;
+}
+
+.nav-right {
+    width: 300px;
+}
+
+.nav-right-a{
+    background: url("../img/tubiao2.jpg") no-repeat;
+}
+.nav-search input {
+    width: 310px;
+    height: 27px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #045bb2;
+    margin-left: 80px;
+
+}
+.nav-search button{
+    border-left: none;
+    width: 38px;
+    height: 30px;
+    background: url("../img/tubiao2.jpg") no-repeat center;
+    position: relative;
+    top: 8px;
+    right: 40px
+}
+
+.container-nav span a {
+    font-size: 14px;
+    color: #eee;
+    padding-left:25px;
+}
+.nav-txt{
+    margin-right: 10px;
+}
+.nav-right button{
+    width: 66px;
+    height: 32px;
+    background: #0e78e7;
+    color: white;
+    border: 1px solid #0e78e7;
+    border-radius: 3px;
+    font-size: 15px;
+}
+/*内容部分*/
+
+.main-container{
+    width: 100%;
+    padding-top: 75px;
+}
+.container-main{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main-left{
+    width: 635px;
+    min-height: 1700px;
+    /*background: #d4ccd2;*/
+}
+.main-right{
+    width: 270px;
+    height: 1000px;
+    background: white;
+    margin-left: 20px;
+}
+.news-header{
+    padding: 15px 0;
+    font-size: 14px;
+    color: #999;
+    border-bottom: 1px solid #ccc;
+}
+.news-header-top{
+    background: url("../img/tubiao.jpg") no-repeat;
+    padding-left: 25px;
+}
+.more{
+    font-size: 12px;
+    color: #999;
+}
+
+/*内容部分*/
+.news-main{
+    height: 175px;
+    border-bottom:1px solid #ccc ;
+    line-height: 21px;
+    padding-top: 12px;
+}
+.news-pic img{
+    padding-top: 5px;
+    padding-right: 8px;
+}
+.main-color{
+    color: #259;
+    font-weight: 700;
+}
+.main-color-a{
+    margin-bottom: 5px;
+}
+.news-name-b{
+    color:  #999;
+    font-size: 13px;
+}
+.news-name{
+    color: inherit;
+    font-weight: 700;
+    font-size: 13px;
+}
+.news-passage p{
+    font-size: 13px;
+    padding-top: 3px;
+}
+/*内容部分*/
+.main-passage{
+    line-height: 50px;
+    font-size: 13px;
+    color: #999;
+    margin-top: -20px;
+}
+.main-passage-div{
+    border-bottom:1px solid #ccc ;
+}
+/*内容部分*/
+.news-hots{
+    height: 140px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+}
+.news-hots-tow{
+    height: 205px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+}
+.news-hots-last{
+    height: 140px;
+    margin-top: 10px;
+}
+
+.hots-conter{
+    width: 580px;
+    margin-left: 12px;
+    line-height: 22px;
+}
+.hots-dianz{
+    width: 30px;
+}
+.hots-pass{
+    color: #222;
+    font-size: 13px;
+}
+.show{
+    color: #259;
+}
+.hots-span a{
+    font-size: 14px;
+    color: #999;
+}
+.hots-dianz-a{
+    display: block;
+    color: #698ebf;
+    height: 24px;
+    line-height: 24px;
+    width: 38px;
+    border-radius: 3px;
+    background: #eff6fa;
+    font-weight: 500;
+    text-align: center;
+}
+.hots-dianz-a:hover{
+   background: #259 ;
+    color: white;
+}
+.hots-bull{
+    padding-left: 12px;
+    background: url("../img/jiahao.jpg") no-repeat left center;
+}
+.hots-bull1{
+    padding-left: 20px;
+    background: url("../img/xinfeng.jpg") no-repeat left center;
+}
+.hots-more a{
+    text-align: center;
+    display: block;
+    width: 632px;
+    height: 34px;
+    color:#666;
+    line-height: 34px;
+    font-size: 14px ;
+    background: #e6e6e8;
+    text-shadow: 0 1px 0 #fff;
+    background: linear-gradient(to bottom,#f8f8f9,#e6e6e8);
+    border: 1px solid #bbb;
+    box-shadow: 0 1px 0 #fff inset, 0 1px 0 rgba(0,0,0,.1);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.hots-pass:hover{
+    text-decoration:none;!important;
+}
+.news-name :hover{
+    text-decoration: underline;
+}
+.show:hover{
+    background:  #698ebf;
+}
+.container-nav a:hover{
+    text-decoration:none;!important;
+}
+
+/*内容左边部分完成*/
+.main-right-title{
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+    font-size: 14px;
+    background: white;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+
+}
+.main-right-title span a{
+    background: url("../img/tubiao3.jpg") no-repeat 0 3px;
+    padding-left: 15px;
+    color: #0f88eb;
+    text-decoration: none;
+}
+.main-right-more{
+margin: 10px 0;
+}
+.remen{
+    font-weight: 700;
+    font-size: 14px;
+}
+.main-touxiang img{
+    width: 40px;
+    margin: 0 10px 0 0;
+    border-radius: 3px;
+}
+.shangbanzu{
+    color:#259;
+    font-size: 14px;
+    text-decoration: none;
+}
+.geren{
+    margin-top: 5px;
+}
+.geren span{
+    font-size: 13px;
+    color: #999;
+
+}
+.guanzhu{
+    padding-bottom: 2em;
+    border-bottom: 1px solid #eee;
+}
+.remenshouchang {
+    line-height: 25px;
+    margin-top: 15px;
+    height: 65px;
+    border-bottom: 1px solid #eee;
+}
+.remenshouchang a{
+    font-size: 14px;
+    color: #259;
+}
+.remenshouchang p{
+    font-size: 13px;
+    color: #999;
+}
+.banquanqu{
+    margin-top: 8px;
+}
+.banquanqu a{
+    color: #999;
+    font-size: 13px;
+    padding-left: 2px;
+}
+.banquanqu span{
+    color: #999;
+    font-size: 13px;
+}

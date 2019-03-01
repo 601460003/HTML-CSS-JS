@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+</head>
+<body>
+
+<!--<div id="app">-->
+    <!--<div v-for="food in foodList">{{food.content}}</div>-->
+<!--</div>-->
+<div id="app" >
+    <!--<lable>-->
+        <!--<input type="checkbox" name="checked"-->
+    <!--</lable>-->
+    <div v-for="food in foodList">
+        <input type="checkbox" >
+        <span>{{food.content}}</span>
+    </div>
+    <ul v-for="food in foodList">
+        <li><span class="count-list">{{food.count}}</span>{{food.name}}</li>
+    </ul>
+
+
+</div>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            foodList: [
+                {
+                    count: 2,
+                    name:'Carol',
+                    content: '红局克造此问样外代斯段位般位报过,新有委条增入算具广务老部图装。'
+                },
+                {
+                    count: 2,
+                    name:'Jessica',
+                    content: '品形系至关打国织度矿求须深教除感。出好战商与集级何议火越来。'
+                },
+                {
+                    count: 2,
+                    name:'Sarah',
+                    content: '中专角除品难支以还火选学。满消派近件必术查率流面除总民信。'
+                },
+                {
+                    count: 2,
+                    name:'Anthony',
+                    content: '路改术体报家以议备才果写复由矿。料个电酸他京往法会农部认王流历。'
+                },
+                {
+                    count: 2,
+                    name:'Anna',
+                    content: '按做程装老位子制住金火按团上想况。局程快际使商其队五法问南地。'
+                },
+            ]
+        }
+    })
+</script>
+</body>
+</html>

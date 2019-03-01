@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js">
+</script>
+</head>
+<body>
+
+语法：美元符号定义JQ
+基础语法：$(selector).action()
+         查询html元素。操作元素
+实例子：
+$(this).hide() - 隐藏当前元素
+
+$("p").hide() - 隐藏所有 <p> 元素
+
+    $("p.test").hide() - 隐藏所有 class="test" 的 <p> 元素
+
+    $("#test").hide() - 隐藏所有 id="test" 的元素
+
+
+
+<script>
+   // 简单例子
+$(document).ready(function () {
+    $('button').click(function () {
+        $('div').css('color','red')
+    })
+})
+</script>
+
+<div>
+    fasfasd
+</div>
+<button>点我</button>
+</body>
+</html>
