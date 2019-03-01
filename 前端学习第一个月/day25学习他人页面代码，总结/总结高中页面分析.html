@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <p >第一点：头部logo用了flex，然后设定宽，使logo跟input两边对齐。
+        为了让头部压的更低，用了margin-top。勉强了一点<br/>
+    第二点：用了bootstrap，直接套用模块，插进去四张图片
+           设置了两边的边距，使幻灯片居中显示。<br/>
+    第三点：校园新闻跟公告栏，用了一个大容器里面分了左边跟右边，设置
+           好左边的长高后开始往里面填充内容。分别填充了标题跟里面的
+           图片加文章内容。初步看了下，一共有10个div，而且里面的内容
+           是一样的，所以只要把第一个DIV做好了，下面九个直接复制就可以了
+           图片使用的时float，让文字靠右边，
+           主要常用的还是：设置文字的大小、颜色、边距、行高、文本缩进 text-inde、必要时要清除浮动<br/>
+    第四点：公告栏部分，也是采用相同的办法，设置好标题后，用ul为里面填充文章 也是使用行高跟边距
+           主要还是先布好局，再往里面填充信息。<br/>
+    第五点：脚部版权部分。分别有五部分，首先也是先完成第一个div里面的内容，其他四个也是一样的，
+           一个标题，然后ul填写信息，完成五个之后，用左浮动，让五个div，向水平方向排好，然后设置
+           字体颜色跟行高，边距等。<br/>
+    总体来说：这个页面相对来说还是比较单一的，学会了背景图片使用background-position 来控制位置
+             还有观察到相同的内容的时候，可以使用命名相同的class，这样可以省去很多样式的填写。
+             公告栏more 可以是用float: right;下面是公告栏制作方法和左边小小的棕色竖杠。
+
+           可以使用DIV里面房子比如</p>
+<h1 style="color: red">今天学会的新知识</h1>
+</div>
+<div style="line-height: 25px;margin-left: 20px">
+    <div class="header">
+        <i></i>
+        公告栏
+        <a href="#" style="text-decoration: none;color: gray">more</a>
+    </div>
+    <div class="car-name">日产轩逸</div>
+    <div class="car-name-p">2017款      1.5L CVT尊贵型</div>
+    <div class="car-date">
+        <span>2018年10月</span>
+        <span class="top"></span>
+        <span>0.67公里</span>
+        <span class="top"></span>
+        <span>温州</span>
+    </div>
+    <div class="car-price">
+        <span class="money">首付0.61万</span>
+        <span class="money-a"> 月供2688元</span>
+    </div>
+</div>
+<div style="text-align: center">弹弹问题</div>
+
+<style>
+    .car-name{
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .car-name-p{
+        font-weight: 700;
+    }
+    .car-date{
+        font-size: 12px;
+        color: #8d8e99;
+    }
+    .top{
+        display: inline-block;
+        border-right: 1px solid #d9d9d9;
+        height: 10px;
+        margin: 0 4px;
+    }
+    .money{
+        font-size: 20px;
+        color: #ff4d30;
+        font-weight: 700;
+    }
+    .money-a{
+        font-size: 12px;
+        color: #8d8e99;
+
+    }
+
+
+
+
+    .header{
+        width: 300px;
+        height: 40px;
+        background: white;
+        border-bottom: 1px solid #973D3F;
+    }
+    .header a {
+        float: right;
+    }
+    .header i{
+        height: 1em;
+        border-right: 3px solid #973D3F;
+        margin-right: 10px;
+    }
+
+</style>
+</body>
+</html>

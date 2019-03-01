@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var score = prompt("小明期末成绩");
+    if (score> 100 || score < 0 || isNaN(score)){
+     alert("拖出去");
+    }else{
+        if (score == 100) {
+            alert("奖励宝马");
+        } else if (score >= 80) {
+            alert("奖励5s");
+        } else if (score >= 60) {
+            alert("奖励参考书");
+        } else {
+            alert("什么也没有");
+        }
+    }
+
+
+</script>
+</body>
+</html>

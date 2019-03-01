@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="left">左栏</div>
+    <div class="middle"></div>
+    <div class="right">右栏</div>
+</div>
+<style>
+    .wrapper{
+        display: flex;
+    }
+    .left{
+        width: 200px;
+        height: 3000px;
+        background: green;
+    }
+    .middle{
+        width: 100%;
+        background: greenyellow;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .right{
+        width: 200px;
+        height: 3000px;
+        background: yellow;
+        box-sizing: border-box;
+    }
+</style>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三栏布局 postion跟浮动+margin</title>
+</head>
+<body>
+<div class="left">左栏</div>
+<div class="right">右栏</div>
+<div class="middle">中间栏</div>
+<div>
+    <div class="left-1">左栏</div>
+    <div class="middle-1">中间栏</div>
+    <div class="right-1">右栏</div>
+</div>
+
+<style>
+    .left{
+    width: 200px;
+    height: 300px;
+    background: yellow;
+    float: left;
+    }
+    .right{
+    width: 150px;
+        height: 300px;
+        background: green;
+        float: right;
+    }
+    .middle{
+    height: 300px;
+        background: red;
+        margin-left: 220px;
+        margin-right: 160px;
+    }
+
+    .left-1{
+        background: yellow;
+        width: 200px;
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+    }
+    .middle-1{
+        height: 330px;
+        background: red;
+        margin-top: 338px;
+        margin-left: 220px;
+        margin-right: 220px;
+    }
+    .right-1{
+        height: 300px;
+        width: 200px;
+        position:absolute;
+       bottom: 0;
+        right: 0;
+        background: green;
+    }
+</style>
+</body>
+</html>

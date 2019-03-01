@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>系统的学习javascript</title>
+</head>
+<body>
+        <!--今天目标：变量、数据类型、运算符、表达式-->
+        <!--定义变量用var-->
+        <!--数据类型分六种：数值、字符、布尔值、null、undefined、object对象-->
+        <!--运算符和表达式-->
+
+/*
+        js作用就是给客户带来交互的体验，就是修改样式。为静态页面带来动态效果
+        比如，鼠标一如到input上的时候，让div显示
+        鼠标移出的时候，让div隐藏
+        这叫JS最基本的事件！
+        事件分很多种，分别用不同的元素代表。具体为：用户的操作
+        onmouseover鼠标移入
+        onmouseout鼠标移入
+        =号代表是赋值，等于X变为5
+         <!--事件例子-->
+        <input type="checkbox" onmouseover="alert('a');">
+        <!--完成一个简单的JS效果，鼠标移出移进弹出的div！-->
+        <!--还要注意一个就是兼容，必须书写规范 引入ID内容必须使用onmouseover="document.getElementById('div1').style.display='block';-->
+        <input type="checkbox" onmouseover="document.getElementById('div1').style.display='block';" onmouseout="div1.style.display='none';">
+         <div id="div1">
+             原理概括：效应用户操作，对页面元素进行修改
+             属性=特性。特点通过.
+             属性：确定要修改的属性
+             事件：想要什么效果
+         </div>
+        <style>
+            #div1{
+                width: 300px;
+                height: 300px;
+                background: gainsboro;
+                margin-top: 30px;
+                display: none;
+            }
+            #top{
+                width: 200px;
+                height: 200px;
+                background: red;
+            }
+        </style>
+
+<!--学习目标：函数-->
+<!--利用函数操作-->
+<div id="top" onmouseover="toGreen()" onmouseout="toRed()">
+  最基本的变大盒子和变回原形，跟上面鼠标例子差不多
+    函数用来修改属性
+    跟CSS小技巧一样，有些东西可以重用就需要用到变量
+    所谓的变量就是给div小名（威力巨大犹如尚方宝剑）
+    想要改变什么，就找到主要对象
+    帮助网页换皮肤
+    任何标签都可以加ID作为对象 任何属性都可以修改
+    html属性怎么写 JS就直接套用怎么改
+</div>
+        <!--JS正规的书写方式-->
+        <script>
+            // 使用变量赋值达到效果 方便管理代码 不会导致很乱
+            var NB= document.getElementById('top');
+            function toGreen () {
+              NB.style.width='300px';
+              NB.style.height='300px';
+              NB.style.background='green';
+            }
+            function toRed () {
+                document.getElementById('top').style.width='200px';
+                document.getElementById('top').style.height='200px';
+                document.getElementById('top').style.background='red';
+            }
+
+        </script>
+                                          */
+<!--学习目标：if-->
+        <input type="button" value="显示隐藏">
+        <div>
+            先整理好思路，在开始写JS代码
+            当点击的时候
+
+            如果DIV是显示的，隐藏掉divsstyyle.display=none;
+            否则else，就显示出来
+
+        </div>
+
+</body>
+</html>

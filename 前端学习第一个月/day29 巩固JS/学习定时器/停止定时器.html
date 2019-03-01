@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击开启跟关闭</title>
+</head>
+<body>
+<input id="btn1" type="button" value="开启">
+<input id="btn2" type="button" value="关闭">
+
+
+<script>
+    window.onload = function () {
+        var obtn = document.getElementById('btn1');
+        var obtn1 = document.getElementById('btn2');
+
+        var timer = null;
+        obtn.onclick = function () {
+
+            timer = setInterval(function () {
+                alert('a')
+            }, 1000);
+        };
+        obtn1.onclick=function () {
+            clearInterval(timer);
+        };
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1"></div>
+<script>
+    // 方法二 简化代码
+    function getStlye(obj,name) {
+        if (obj.currentStyle){
+            return obj.currentStyle[name]
+        }
+        else{
+            return getComputedStyle(obj,null)[name];
+        }
+    }
+    
+    
+    
+    function css(obj, name, value) {
+        if (arguments.length == 2) {
+            return obj.style[name];
+        }
+        else {
+            obj.style[name] = value;
+        }
+    }
+    // 方法二 简化代码
+    window.onload=function () {
+        var odiv=document.getElementById('div1');
+        alert(getStlye(odiv,'height'));
+    }
+// 方法一
+    // window.onload = function () {
+    //     var odiv = document.getElementById('div1');
+    //     // alert(getComputedStyle(odiv,null).width);          ///发生兼容的问题了
+    //      if (odiv.getcurrentStyle) {                           //则就需要用IF来判断解决兼容问题
+    //           alert(odivcurrentStyle.width)                      //一但发现问题，就要想办法去解决他
+    //      }
+    //      else{
+    //          alert(getComputedStyle(odiv,null).width);
+    //      }
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex 布局教程：实例篇</title>
+</head>
+<body style="background: black;">
+<div class="header" style="height: 1000px">
+    <div style="width: 150px; height: 150px;border: 1px solid #f2f0ff;background: #f6ffea;border-radius: 17px;margin-right: 50px">
+        <div class="content">  </div>
+        <div class="content1"></div>
+        <div class="content2"></div>
+    </div>
+    <div style="width: 150px; height: 150px;border: 1px solid #f2f0ff;background: #f6ffea;border-radius: 17px;">
+        <div class="content"></div>
+    </div>
+</div>
+
+
+<style>
+    /*以上注释归为****骰子的布局*****/
+
+
+    /*主要常用属性：区分容器使用display：flex*/
+    /*justify-content ：属性定义了项目在主轴上的对齐方式*/
+    /*align-items属性定义项目在交叉轴上如何对齐*/
+    /*flex-direction选择主轴方向: column垂直 row水平*/
+    /*align-self 属性定义flex子项单独在侧轴（纵轴）方向上的对齐方式：单个项目操作*/
+    /*例子：.box {*/
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+        /*align-content: space-between;*/
+    /*}*/
+
+    /*.column {*/
+        /*flex-basis: 100%;*/
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+    /*}*/
+
+
+    /*以上注释归为****骰子的布局*****/
+    .header{
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        background: black;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 18px;
+        display: flex;
+    }
+    .content1{
+        background: black;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 18px;
+    }
+    .content2{
+        background: black;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 18px;
+    }
+
+</style>
+</body>
+</html>

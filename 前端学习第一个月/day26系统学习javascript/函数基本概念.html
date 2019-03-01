@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<!--学习目标 函数-->
+<!--一 ：函数传参-->
+
+<!--input跟button的区别-->
+<!--因此，请始终为 <button> 元素规定 type 属性。因为不同的浏览器对 <button> 元素的 type 属性使用不同的默认值；-->
+
+    <!--如果在 HTML 表单中使用 <button> 元素，不同的浏览器可能会提交不同的按钮值。因此请尽可能使用 <input> 在 HTML 表单中创建按钮-->
+<!--<input type="button" value="变红" onclick="seter('black')"/>-->
+<!--<input type="button" value="变黄" onclick="seter('red')"/>-->
+<!--<input type="button" value="变绿" onclick="seter('pink')"/>-->
+<!--<div id="div1">-->
+<!--</div>-->
+
+
+<!--改变背景颜色-->
+<!--<script>-->
+    <!--// 改变背景颜色-->
+    <!--// 观察如果一样的可以合并成一个简化代码-->
+    <!--// 调用值=小括号里面的想对应 里面是什么，显示的就是什么:这叫做函数传参-->
+    <!--// 函数传参也叫占用符-->
+    <!--// function seter(color) {-->
+    <!--//     var NB=document.getElementById('div1');-->
+    <!--//     NB.style.background=color;-->
+    <!--// }-->
+    <!--// function togreen() {-->
+    <!--//     var NB=document.getElementById('div1');-->
+    <!--//     NB.style.background='green';-->
+    <!--// }-->
+    <!--// function toyellow() {-->
+    <!--//     var NB=document.getElementById('div1');-->
+    <!--//     NB.style.background='yellow';-->
+    <!--// }-->
+    <!--// function tored() {-->
+    <!--//     var NB=document.getElementById('div1');-->
+    <!--//     NB.style.background='red';-->
+    <!--// }-->
+<!--// </script>-->
+
+<!--第一种操作属性的方法-->
+<!--NB.value='aaaaaaa';-->
+<!--第二种操作属性方法-->
+<!--NB[ name]='aadasda';-->
+
+
+
+
+
+<!--第二种方法-->
+<!--[]利用函数传递方法-->
+
+<input type="button" value="变红" onclick="setStyle('width','400px')"/>
+<input type="button" value="变黄" onclick="setStyle('height','500px')"/>
+<input type="button" value="变绿" onclick="setStyle( 'background','green')"/>
+<div id="div1">
+
+</div>
+
+
+<script>
+    function setStyle(name,value) {
+       var NB=document.getElementById('div1');
+        NB.style[name]=value;
+    }
+    
+    
+    
+    
+    // function toheight() {
+    //     var NB = document.getElementById('div1');
+    //
+    //     NB.style.height = '500px';
+    // }
+    //
+    // function towidth() {
+    //     var NB = document.getElementById('div1');
+    //
+    //     NB.style.width = '500px';
+    // }
+    //
+    // function togreen() {
+    //     var NB = document.getElementById('div1');
+    //
+    //     NB.style.background = 'green';
+    // }
+</script>
+
+</body>
+</html>

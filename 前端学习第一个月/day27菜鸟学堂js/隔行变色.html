@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="ul1">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<script>
+
+       var oul=document.getElementById('ul1');
+       var NB=oul.getElementsByTagName('li');
+       for (var i=0;i<NB.length;i++){
+           if (i%2){
+               NB[i].style.background='red';
+           }
+           else {
+               NB[i].style.background='blue';
+           }
+       }
+
+</script>
+</body>
+</html>

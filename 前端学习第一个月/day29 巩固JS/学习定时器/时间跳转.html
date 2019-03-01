@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background: black;font-size: 50px">
+
+<img id="hour" src="../img/0.jpg"/>
+<img id="hour2" src="../img/0.jpg"/>
+:
+<img id="min" src="../img/0.jpg"/>
+<img id="min2" src="../img/0.jpg"/>
+:
+<img id="se" src="../img/0.jpg"/>
+<img id="se2" src="../img/0.jpg"/>
+
+
+<script>
+
+    // var hourNode = document.getElementById('hour');
+    // var hourNode2 = document.getElementById('hour2');
+    // var min = document.getElementById('min');
+    // var min2 = document.getElementById('min2');
+    // var se = document.getElementById('se');
+    // var se2 = document.getElementById('se2');
+
+
+
+    // setInterval(function () {
+    //     // debugger
+    //     var time = new Date();
+    //     var hour = time.getHours();
+    //     var minutes = time.getMinutes();
+    //     var secondes = time.getSeconds();
+    //
+    //
+    //     console.log(hour.length)
+    //     if (hour < 10) {
+    //         hourNode.src = '../img/' + 0 + '.jpg';
+    //         hourNode2.src = '../img/' + hour + '.jpg';
+    //     } else {
+    //         hour = hour + '';
+    //         hourNode.src = '../img/' + hour.charAt(0) + '.jpg';
+    //         hourNode2.src = '../img/' + hour.charAt(1) + '.jpg';
+    //     }
+    //
+    // `   //分`
+    //     if (minutes < 10) {
+    //         min.src = '../img/' + 0 + '.jpg';
+    //         min2.src = '../img/' + minutes + '.jpg';
+    //     } else {
+    //         minutes = minutes + '';
+    //         min.src = '../img/' + minutes.charAt(0) + '.jpg';
+    //         min2.src = '../img/' + minutes.charAt(1) + '.jpg';
+    //     }
+
+    //     //秒
+    //     if (secondes < 10) { //0 -9
+    //         se.src = '../img/' + 0 + '.jpg';
+    //         se2.src = '../img/' + secondes + '.jpg';
+    //     } else {
+    //         secondes = secondes + '';
+    //         se.src = '../img/' + secondes.charAt(0) + '.jpg';
+    //         se2.src = '../img/' + secondes.charAt(1) + '.jpg';
+    //     }
+    //
+    // }, 1000)
+
+    //
+    // var hour = document.getElementById('hour');
+    // var index = 0;
+    // setInterval(function () {
+    //     if(index >9){
+    //         index = 0;
+    //     }
+    //     var src = '../img/'+index+'.jpg';  // '' + var + ''
+    //     hour.src = src;
+    //     index = index  + 1;// == index++
+    // },1000)
+
+
+    //=================================================
+    var se2=document.getElementById('se2');
+    var se=document.getElementById('se');
+    var min=document.getElementById('min');
+    var  min2=document.getElementById('min2');
+    var hour=document.getElementById('hour');
+    var hour2=document.getElementById('hour2');
+
+
+
+
+
+
+
+
+
+    setInterval(function () {
+        var time=new Date();
+        var shi=time.getHours();
+        console.log(shi)
+
+        if (shi<10){
+
+            hour.src='../img/'+0+'.jpg';
+            hour2.src='../img/'+shi+'.jpg';
+        }
+        else{
+            shi=shi+'';
+            hour.src='../img/'+shi.charAt(0)+'.jpg';
+            hour2.src='../img/'+shi.charAt(1)+'.jpg';
+
+        }
+
+    },1000);
+
+
+
+       setInterval(function () {
+        var time=new Date();
+        var fen=time.getMinutes();
+        console.log(fen)
+
+        if (fen<10){
+
+            min.src='../img/'+0+'.jpg';
+            min2.src='../img/'+fen+'.jpg';
+        }
+        else{
+            fen=fen+'';
+            min.src='../img/'+fen.charAt(0)+'.jpg';
+            min2.src='../img/'+fen.charAt(1)+'.jpg';
+
+        }
+
+    },1000);
+
+    setInterval(function () {
+        var time=new Date();
+        var miao=time.getSeconds();
+        console.log(miao)
+
+        if (miao<10){
+
+            se.src='../img/'+0+'.jpg';
+            se2.src='../img/'+miao+'.jpg';
+        }
+        else{
+            miao=miao+'';
+            se.src='../img/'+miao.charAt(0)+'.jpg';
+            se2.src='../img/'+miao.charAt(1)+'.jpg';
+
+        }
+
+    },1000);
+
+
+
+</script>
+
+</body>
+</html>

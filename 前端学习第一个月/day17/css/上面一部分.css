@@ -1,0 +1,142 @@
+.header-right-middle a {
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    margin-left: 14px;
+    text-decoration: none;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 13px;
+    box-shadow: 6px 8px 20px rgba(45, 45, 45, .15);
+
+}
+.user-f{
+    color: #e43f3b;
+    list-style-type: ;
+}
+
+.user-f:hover {
+    background: #e43f3b;
+    color: white;
+}
+
+.user-g {
+    background: #363634;
+    color: #e5d790;
+}
+.user-g:hover{
+    background:  #e43f3b;
+    color: white;
+}
+
+.content-a{
+    padding-left: 6px;
+}
+.content-b ul{
+    padding-left: 2px;
+}
+.content-a li{
+    display: inline;
+    list-style-type: none;
+
+}
+.content-a a{
+    text-decoration: none;
+    color: gray;
+    margin-left: 20px;
+
+}
+.content-b li{
+    list-style-type: none;
+    line-height: 22px;
+    padding-left: 6px;
+}
+.content-b a{
+    text-decoration: none;
+    color: gray;
+    margin-left: 20px;
+}
+
+.content-b a:hover{
+    color: red;
+}
+
+
+
+/*排行版*/
+.foot-left, .foot-main,.foot-right {
+    width: 390px;
+    height: 450px;
+    background: white;
+    float: left;
+}
+
+.foot-left-a,.foot-main-a{
+    width: 390px;
+    height: 60px;
+    padding-left: 20px;
+    line-height: 60px;
+}
+
+.foot-left-b {
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: #f7f7f7
+}
+
+.foot-left-b ul {
+    padding: 0;
+    margin: 0;
+}
+
+.foot-left-b li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 16px;
+    font-size: 12px;
+    padding-left: 12px;
+}
+
+.foot-left-c img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-top: 21px;
+    margin-left: 9px;
+}
+
+.foot-big {
+    font-size: 32px;
+    color: #e74240;
+    float: left;
+    margin: 36px 0 0 10px;
+}
+
+.foot-big-a {
+    font-size: 12px;
+    margin-left: 125px;
+    padding-top: 40px;
+    display: block;
+}
+
+.foot-main-b img {
+    width: 350px;
+    height: 128px;
+    margin-left: 20px;
+}
+
+.foot-main-c img {
+    width: 105px;
+    height: 105px;
+}
+.foot-main-d{
+    width: 350px;
+    height:37px;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #666;
+}

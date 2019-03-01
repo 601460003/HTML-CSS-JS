@@ -1,0 +1,203 @@
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,iput{margin:0;padding:0;}
+
+body{font-size:12px;}
+
+img{border:none;}
+
+li{list-style:none;text-decoration: none;}
+
+input,select,textarea{outline:none;}
+
+textarea{resize:none;}
+
+a{text-decoration:none;}
+/*导航头部样式*/
+.header{
+    width: 100%;
+    /*background: #a7fcb6;*/
+}
+.nav{
+    height: 40px;
+    background:#4b505d;
+    display: flex;
+
+}
+.nav-list{
+    display: flex;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.nav-list span{
+    background: url("https://static.oschina.net/new-osc/img/icon_home.svg") no-repeat;
+    margin-left: px;
+    padding-left: 20px;
+}
+.nav-list a{
+    font-size: 15px;
+    color: rgba(255,255,255,.7);
+    margin-right: 22px;
+}
+.nav-right{
+    text-indent: 1090px;
+    line-height: 40px;
+}
+.nav-right a{
+    margin-right: 5px;
+    font-size: 15px;
+    color: rgba(255,255,255,.7);
+   text-align: right;
+}
+/*内容搜索部分*/
+.container{
+    width: 100%;
+}
+.search{
+    width: 1200px;
+    height: 80px;
+    background: white;
+     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+.search-logo img{
+    width: 152px;
+    height: 42px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.search-input input{
+    width: 500px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 15px;
+
+}
+.search-input button{
+    width: 64px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    background: #06ad3d;
+}
+.search-app img{
+    width: 15px;
+    height: 24px;
+    vertical-align: middle;
+}
+.search-app span{
+    padding-left: 5px;
+    font-size: 14px;
+    color: #32aa66;
+    font-weight: 700;
+}
+/*软件问答*/
+.list-box{
+    width: 1200px;
+    height: 74px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+}
+.list-box-column{
+    display: flex;
+    font-size: 14px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+.list-header ,.list-item{
+    margin-right: 15px;
+}
+.list-item a{
+    color: #111;
+}
+.list-header a{
+    font-weight: bold;
+    color: #111;
+}
+/*综合资讯*/
+.news-container{
+    width: 1200px;
+    /*height: 1200px;*/
+    margin: 20px auto;
+    /*background: #c7ced4;*/
+    display: flex;
+}
+.news-container-left{
+    width: 900px;
+    /*height: 800px;*/
+    background: #a8b3e0;
+    display: flex;
+}
+
+.news-left{
+    width: 442px;
+    /*height: 800px;*/
+    background: white;
+    line-height: 25px;
+    padding-left: 15px;
+}
+.news-right{
+    width: 442px;
+    height: 367px;
+    background: #41bf4a;
+}
+.news-left p{
+    font-size: 14px;
+    color: #7d7d7d;
+}
+.news-left a{
+    font-size: 14px;
+    color: #022856;
+}
+/*开始右边编写*/
+.news-container-right{
+    width: 300px;
+    /*height: 1000px;*/
+    background: white;
+    margin-left: 18px;
+}
+.news-container-right-search{
+    height: 105px;
+}
+.news-container-right-search h3{
+    font-size: 14px;
+    color: #a00;
+}
+.news-container-right-search input{
+    width: 232px;
+    height: 51px;
+    margin-top: 12px;
+    font-size: 12px;
+    border: 1px solid #d8d8d8;
+}
+.news-container-right-search button{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    width: 44px;
+    height: 51px;
+    background: #21b351;
+    border: 0;
+}
+.news-hot{
+    line-height: 20px;
+}
+.news-hot span{
+    font-size: 13px;
+}
+/*动弹热们*/
+.hot-a img{
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+.hot-a-passage{
+    margin-left: 24px;
+    color:#9b9b9b;
+}

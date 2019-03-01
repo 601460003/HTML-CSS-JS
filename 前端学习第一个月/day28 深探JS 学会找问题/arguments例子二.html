@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS函数</title>
+</head>
+<body>
+
+
+<div id="div1" style="width: 300px;height: 300px;background: red">
+
+</div>
+
+<!--<script>-->
+    <!--function css(obj,name,value) {-->
+        <!--// alert(obj==arguments[0]);                   //为了验证两者是否一样，如果是true 则必须一样-->
+        <!--if (arguments.length == 2) {                     //判断条件必须用==号  意味着获取元素-->
+            <!--return arguments[0].style[arguments[1]];   //又是一个.出的错 又是一个花括号，然后去控制台找问题 红色波浪线-->
+        <!--}-->
+        <!--else {-->
+            <!--arguments[0].style[arguments[1]] = arguments[2];-->
+        <!--}-->
+    <!--}-->
+
+
+        <!--window.onload = function () {-->
+            <!--var odiv = document.getElementById('div1');-->
+            <!--// alert(css(odiv, 'width'));   //第一个效果出来了-->
+            <!--css(odiv,'background','green');  //同样的函数 即可获取也可以设置-->
+
+        <!--}-->
+<!--</script>-->
+
+<!--以下效果一样-->
+给他取名，就可以运用他 函数传参
+<script>
+    function css(obj,name,value) {
+        // alert(obj==arguments[0]);                   //为了验证两者是否一样，如果是true 则必须一样
+        if (arguments.length == 2) {                     //判断条件必须用==号  意味着获取元素
+            return obj.style[name];   //又是一个.出的错 又是一个花括号，然后去控制台找问题 红色波浪线
+        }
+        else {
+            obj.style[name] = value;
+        }
+    }
+
+
+    window.onload = function () {
+        var odiv = document.getElementById('div1');
+        // alert(css(odiv, 'width'));   //第一个效果出来了
+        css(odiv,'background','green');  //同样的函数 即可获取也可以设置
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+
+
+var arr=['2','3']
+
+
+var odiv=document.getElementById('tab');
+var ali=odiv.getElementsByName('li');
+var oTxt=odiv.getElementsByName('div')[0];
+
+ for(var i=0;i<ale.length;i++)
+{
+    ali[i].index=i;   //赋值给i
+     ali[i].onmouseover=function()
+{
+     for(var i=0;i<ale.length;i++)
+ {  ali[i].className='';
+   }
+this.className='active';
+
+oTxt.innerHTML='<h2>'+(this.index+1)+'月活动'</h2>
+               <p>'+arr[this.index]+'</p>'
+
+思路：先声明所需要控制的的元素
+然后循环 控制所有触碰发生事件的li
+然后 插入一个事件，事件的前奏就是再用一个循环将Class属性清空
+再用this发生当前元素为class属性
+修改DIV里面内容用 innerHTML=传递给H2跟P内容
+使用数组，将标签内容循环。
+只有一个div ：字符串连接：优先级加减法：
+
+[内容可以用其他东西替换]
+获取一组元素 getBYtagname：数组
+选项卡 this的使用
+先清空所有class

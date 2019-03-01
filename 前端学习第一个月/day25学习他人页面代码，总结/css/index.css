@@ -1,0 +1,133 @@
+body{
+    background-color: #545454;
+}
+.title-top{
+    width:1060px;
+    margin:0 auto;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.title-top input{
+    width: 278px;
+    height: 54px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+.collapse{
+    background: #2f2f2e;
+    width:1060px;
+    margin: 0 auto;
+    text-indent: 25px;
+    margin-top: 10px;
+}
+.header li a{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+.header li a:hover{
+    background: white;
+    color: red;
+}
+.carousel {
+    margin: 0 auto;
+    width: 1060px;
+    padding-left: 30px;
+    background: white;
+}
+.container-fluid{
+    width:1060px;
+    margin: 0 auto;
+    background: white;
+    display:flex;
+}
+.Lastest{
+    width: 650px;
+    height: 1280px;
+    background: white;
+    margin-left: 15px;
+    padding-right: 15px;
+}
+.notice{
+    width: 325px;
+    height: 1200px;
+    background: #efefef;
+    margin-left: 25px;
+}
+.Lastest h4{
+    color:#973D3F ;
+    border-bottom: 1px solid #973D3F;
+    line-height: 2em;
+}
+.Lastest img{
+    width: 168px;
+    height: 118px;
+    float: left;
+    margin:3px 10px 0 0 ;
+    vertical-align: middle;
+    clear: both;
+}
+
+.Lastest p{
+    text-indent: 20px;
+    margin-top: 5px;
+}
+/*公告栏*/
+.notice-top{
+    padding-left: 10px;
+    /*border-left: 3px solid #973D3F;*/
+    border-bottom: 1px solid #973D3F;
+    padding-top: 6px;
+}
+.notice-top h4{
+    font-weight: 700;
+}
+.notice-item {
+    padding-left: 15px;
+    list-style-type: square;
+    line-height: 30px;
+    padding-top: 10px;
+    height: 340px;
+}
+.notice-item li a {
+    color: #333;
+}
+/*最后一部分*/
+.footer{
+    width: 1060px;
+    height: 345px;
+    background: #2f2f2e;
+    margin: 0 auto;
+}
+.footer-list{
+    height: 170px;
+    float: left;
+    margin-top: 10px;
+}
+.footer-list h4{
+    font-size: 16px;
+    padding-left: 40px;
+    color: #d62328;
+}
+.footer-list li{
+    list-style-type: none;
+    line-height: 22px;
+    color: white;
+}
+.footer-num{
+    clear: left;
+    margin-left: 30px;
+}
+.footer-num p{
+    font-size: 12px;
+    color: white;
+    padding-left: 10px;
+    background: url("http://zsdsgz.com/wp-content/themes/air-balloon-lite/images/dot1.png") no-repeat;
+    background-position:0 5px;
+}
+.footer-logo{
+    float: right;
+}

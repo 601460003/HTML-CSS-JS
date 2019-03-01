@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>arguments.length\obj.currentstyle[atte]\GetComputedStyle(obj.false)[attr]分析</title>
+</head>
+<body>
+<!--知识点一：css函数-->
+<!--判断：参数数组arguments.length-->
+<!--知识点二：取非行间样式的办法及利用If判断解决兼容问题-->
+<!--obj.currentstyle[atte]-->
+<!--GetComputedStyle(obj.false)[attr]-->
+<!--<script>-->
+    <!--function show(a,b,c) {-->
+        <!--return a+b+c;   //返回值结果必须要有东西  一次只能返回一个值-->
+    <!--}-->
+    <!--// var a=show();//声明变量用要保存函数，再反出结果-->
+    <!--alert(show(3,5,6))//又是中文逗号 还好发现的早-->
+<!--</script>-->
+
+<!--可变参数数组出场了arguments-->
+<script>
+    function sum() {
+             // alert(arguments.length);
+             // alert(arguments[0]); 这个就是数组的参数，一见到数组，for循环就出现了，先声明
+        var result=0;
+        for (var i=0;i<arguments.length;i++){
+            result+=arguments[i];
+        }
+        return result;
+    }
+    alert(sum(3,4,5,3,4,5,3,4,5,3,4,5,3,4,5,3,4,5,3,4,5,3,4,5,));
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

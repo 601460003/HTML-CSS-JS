@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            float: left;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+<body>
+<!--学习目标：字符串跟变量的区别-->
+<!--变量是未知数-->
+<!--**字面量叫常量：看到的东西，自然就知道是什么-->
+<!--12* 12 12 不会发生改变的-->
+<!--字面量必须加双引号或者单引号-->
+<!--**变量：-->
+<!--var a=? 如果没有给予赋值未定义-->
+<!--变量不需要加双引号-->
+
+
+<!--样式的优先级：-->
+<!--*<标签<class<id<行间-->
+
+ <!--提取行间事件-->
+ <!--1:如何为元素添加事件？-->
+ <!--学会取名字-->
+ <!--第一种方法-->
+ <!--var NB="document.getElementById('div1');-->
+
+ <!--function名字（）="名字"-->
+
+ <!--NB.onclick=名字-->
+
+<!--第二种方法-->
+
+ <!--NB.onclick="funtion()"-->
+ <!--大部分函数是没有名字的。-->
+ <!--顺序由上到下开始执行-->
+
+<!--！！window.onload的意义页面加载完成时发生-->
+<!--在外面套一层widows.onload=funtion()-->
+
+<!--行为、样式、 结构三者分离-->
+<!--JS \CSS'\HTML-->
+
+
+ <!--******直接获取一组元素-->
+
+<!--数组例子-->
+<!--alert(NB.length长度) 数字中最常见的元素-->
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<script>
+    window.onload=function () {
+
+        var NB=document.getElementsByTagName('div');
+               // (i<NB.length)代替人工 实现智能化
+        for (var i =0;i<8;i++){
+            NB[i].style.background='red';
+        }
+        //   下面开始使用for循环来简化代码；很简单，只要一句话
+        // NB[0].style.background='red';
+        // NB[1].style.background='red';
+        // NB[2].style.background='red';
+        // NB[3].style.background='red';
+
+    }
+</script>
+
+</body>
+</html>

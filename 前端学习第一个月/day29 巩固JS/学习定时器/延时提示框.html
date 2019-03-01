@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            float: left;
+            margin: 10px;
+        }
+
+        #div1 {
+            width: 50px;
+            height: 50px;
+            background: #ff6778;
+        }
+
+        #div2 {
+            width: 200px;
+            height: 200px;
+            background: gainsboro;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2">
+    绝地求生，刺激战场
+</div>
+
+<script>
+    window.onload = function () {
+        var odiv1 = document.getElementById('div1');
+        var odiv2 = document.getElementById('div2');
+        var timer = null;
+
+        odiv2.onmouseover = odiv1.onmouseover = function () {
+            clearTimeout(timer);
+            odiv2.style.display = 'block';
+        };
+
+
+        odiv2.onmouseout = odiv1.onmouseout = function () {
+
+            timer = setTimeout(function () {
+                odiv2.style.display = 'none';
+
+            }, 1000);
+        };
+
+    }
+</script>
+</body>
+</html>

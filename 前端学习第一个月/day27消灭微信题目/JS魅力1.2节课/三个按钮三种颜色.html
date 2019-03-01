@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用三个按钮是DIV变三种颜色</title>
+</head>
+<body>
+
+
+<input type="button" value="变红" onclick="toRed()">
+<input type="button" value="变粉" onclick="toPink()">
+<input type="button" value="变绿" onclick="togreen()">
+<div id="li">
+
+</div>
+
+<script>
+    function toRed() {
+        var NB=document.getElementById('li'); //一定要注意逗号和分号别用错
+
+        NB.style.background="red";
+    }
+    function toPink() {
+        var NB=document.getElementById('li');
+
+        NB.style.background='pink';
+    }
+    function togreen() {
+        var NB=document.getElementById('li');
+
+        NB.style.background="green";
+    }
+</script>
+
+
+
+<style>
+    #li{
+        width: 200px;
+        height: 200px;
+        background: yellow;
+    }
+</style>
+</body>
+</html>

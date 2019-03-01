@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="lo" type="button"  onmouseout="olo()">
+<div id="li">
+你好 世界！
+</div>
+
+<script>
+   // function ol() {
+   //     var NB=document.getElementById('li');
+   //     NB.style.display='block';
+   // }
+   var NB=document.getElementById('li');
+   NB.onclick=function () {
+       NB.style.background='red';
+   }
+   function olo() {
+       var NB=document.getElementById('li');
+       NB.style.display='none';
+   }
+
+
+
+</script>
+
+<style>
+    #li{
+        width: 200px;
+        height: 300px;
+        background: gray;
+        display: block;
+    }
+</style>
+</body>
+</html>

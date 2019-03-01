@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>参考例子</title>
+    <style>
+        #insert {
+            width: 694px;
+            margin: 0 auto;
+        }
+
+        .footer a {
+            float: left;
+        }
+
+        .footer ul li {
+            float: left;
+            list-style-type: none;
+        }
+
+        .footer ul li a {
+
+        }
+    </style>
+</head>
+<body>
+<div id="insert">
+
+
+</div>
+
+
+<script>
+
+    var list = [
+        {
+            title: '90 后每个月工资多少算正常？',
+            content: '444444444444444444丑人数学： 现实中：3000～8000 知乎上：3000.0～8000.0 （三万多一点，八万多一点） 请你放心，月入过万的人，绝对是很少的一部分。 正常工资…',
+            count: 99,
+            cricle: 10
+        },
+        {
+            title: '92 后每个月工资多少算正常？',
+            content: '2222222222222一波不是一波： 斗胆说一下，希望不会偏差。 以下列表按重要权重排列（越后面越重要） 技术热点 Flutter: 继续深入下去是不得不搞 Native 的，所…阅读全文​',
+            count: 99,
+            cricle: 10
+        },
+        {
+            title: '94 后每个月工资多少算正常？',
+            content: 'Jasmine： 1.原来人的精力是有限的 (没工作之前觉得自己每天悲伤春秋，谈个恋爱小心思也可多了，天天幻想各种不切实际的美好)。以前可能是精力太多…阅读全文​…',
+            count: 99,
+            cricle: 10
+        },
+        {
+            title: '96 后每个月工资多少算正常？',
+            content: '2222222222222丑人数学： 现实中：3000～8000 知乎上：3000.0～8000.0 （三万多一点，八万多一点） 请你放心，月入过万的人，绝对是很少的一部分。 正常工资…',
+            count: 99,
+            cricle: 10
+        },
+        {
+            title: '98 后每个月工资多少算正常？',
+            content: '000000000000丑人数学： 现实中：3000～8000 知乎上：3000.0～8000.0 （三万多一点，八万多一点） 请你放心，月入过万的人，绝对是很少的一部分。 正常工资…',
+            count: 99,
+            cricle: 10
+        },
+        {
+            title: '90 后每个月工资多少算正常？',
+            content: '111111111111丑人数学： 现实中：3000～8000 知乎上：3000.0～8000.0 （三万多一点，八万多一点） 请你放心，月入过万的人，绝对是很少的一部分。 正常工资…',
+            count: 99,
+            cricle: 10
+        }
+    ]
+
+    var html = '';
+    for (var i = 0; i < list.length; i++) {
+        console.log(list[0].title)
+        // html = html + '<div style="    height: 202px;">\n' +
+        //     '        <h2>' + list[i].title + '</h2>\n' +
+        //     '            <p>' + list[i].content + '</p>\n' +
+        //     '            <div class="footer">\n' +
+        //     '                <a href="#">' + list[i].count + '</a><button style="float: left">▼</button>\n' +
+        //     '                <ul>\n' +
+        //     '                    <li><a href="#">' + list[i].cricle + '</a></li>\n' +
+        //     '                    <li><a href="#">分享</a></li>' +
+        //     '                    <li><a href="#">收藏</a></li>' +
+        //     '                    <li><a href="#">感谢</a></li>' +
+        //     '                    <li><a href="#">...</a></li>' +
+        //     '                </ul>'
+        //     '            </div>'
+        //     '    </div>';
+    }
+
+
+
+    document.getElementById('insert').innerHTML = html;
+
+
+</script>
+
+</body>
+</html>

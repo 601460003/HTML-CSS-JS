@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="aa" onclick="setDIS()">
+<div id="li">
+    sadjksahdjksadh
+</div>
+<style>
+    #li{
+        width: 200px;
+        height: 200px;
+        background: gainsboro;
+        display: none;
+    }
+
+
+</style>
+
+<script>
+    function setDIS() {
+        var NB=document.getElementById('li');
+
+        if (NB.style.display=='block'){ //浏览器没有报错的情况下就是没有问
+            NB.style.display='none';    //这里最大的错误就是 忘记判断语句中==才是判断，=则是赋值
+        } else {
+            NB.style.display='block'
+        }
+    }
+</script>
+</body>
+</html>

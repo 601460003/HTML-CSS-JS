@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="txt1" type="text">
+<input id="li" type="button" value="创建LI">
+<ul id="ul1">
+    
+</ul>
+
+<script>
+    window.onload=function ()
+
+   {
+        var oBtn=document.getElementById('li');
+
+        var oUl=document.getElementById('ul1');
+
+        var oTxt=document.getElementById('txt1');
+
+        oBtn.onclick=function(){
+            var oLi=document.createElement('li');
+
+            var aLi = oUl.getElementsByTagName('li');
+
+           if (aLi.length>0) {                             //每次出现兼容的问题时候 就要用if判断来解决
+               oUl.insertBefore(oLi,aLi[0]);               //插入 微博第一评论
+           }
+           else {
+               oUl.appendChild(oLi);
+           }
+            oLi.innerHTML=oTxt.value;                           //将内容转变成 输出文本内容
+            //父级.appendchild(子节点)
+            // oUl.appendChild(oLi);
+            // oUl.insertBefore(oLi,aLi[0]);
+        }
+    }
+</script>
+</body>
+</html>

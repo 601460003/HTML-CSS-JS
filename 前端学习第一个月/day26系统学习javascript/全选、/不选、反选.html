@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小例子还没解决  终于解决了//气死我了 今天写的JS 好多都是不时逗号写错就是分号写错，还有就是单双引号写错！！！！！</title>
+</head>
+<body>
+<input  id="box" type="button" value="全选"><br/>
+<input  id="box5" type="button" value="不选"><br/>
+<input  id="box6" type="button" value="反选"><br/>
+<div id="box1">
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+</div>
+
+
+<script>
+    window.onload=function () {
+        var  NB=document.getElementById('box');
+        var  NB5=document.getElementById('box5');
+        var  NB6=document.getElementById('box6'); ///气死我了 今天写的JS 好多都是不时逗号写错就是分号写错，还有就是单双引号写错！！！！！
+        var  NBa=document.getElementById('box1');
+        var  NBb=NBa.getElementsByTagName('input');
+        NB.onclick=function () {
+
+            for (var i=0;i<NBb.length;i++){
+                NBb[i].checked=true;
+            }
+        }
+
+        NB5.onclick=function () {
+
+            for (var i=0;i<NBb.length;i++){
+                NBb[i].checked=false;
+            }
+        }
+        NB6.onclick=function () {
+
+            for (var i=0;i<NBb.length;i++){
+                if (NBb[i].checked==true) {
+                    NBb[i].checked=false;
+                }
+                else{
+                    NBb[i].checked=true;
+                }
+
+            }
+        }
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<input type="button" value="变宽" onclick="setStyle('width','500px')">
+<input type="button" value="变高" onclick="setStyle('height','500px')">
+<input type="button" value="变绿" onclick="setStyle('background','green')">
+<div id="li">
+    什么时候用呢？
+    就是修改的属性不固定的时候
+    区别字符串跟变量
+</div>
+<script>
+    function setStyle(name,value) {
+        var NB=document.getElementById('li');
+
+        NB.style[name]=value; //这里[name]是未知的，[？]用什么代替都可以, 同理 a=b 也是一样的里面是什么 就传达什么！！
+    }
+</script>
+
+
+
+
+<style>
+    #li{
+        width: 200px;
+        height: 300px;
+        background: red;
+    }
+</style>
+</body>
+</html>

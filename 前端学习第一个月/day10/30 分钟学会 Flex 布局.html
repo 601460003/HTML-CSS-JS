@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>30 分钟学会 Flex 布局</title>
+</head>
+<body>
+    <div class="content" style="display: flex;width: 100%;flex-grow:auto(1 1 auto)">
+        <div class="box1" style="background-color:coral; order: 3;">红色</div>
+        <div class="box1" style="background-color:lightblue; order: 2;flex-grow: 1">蓝色</div>
+        <div class="box1" style="background-color:lightgreen; order: 2;flex-grow: 1">带有更多内容的绿色 div</div>
+        <div class="box2" style="background-color:pink; order: 1;flex-grow: 2">粉色</div>
+        <div class="box2" style="background-color:lightgrey;order: 1;flex-grow: 2">灰色</div>
+    </div>
+
+
+
+<style>
+    .content {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        width: 300px;
+        height:100px;
+        margin:auto;
+
+
+    }
+
+</style>
+
+
+<!--</div>-->
+
+<!--<style>-->
+
+<!--#main{-->
+<!--/*width: 350px;*/-->
+<!--height: 100px;-->
+<!--border: 1px solid black;-->
+<!--display: flex;-->
+<!--position: absolute;-->
+<!--margin: 0 auto;-->
+<!--}-->
+
+
+<!--/*flex-grow 属性用于设置或检索弹性盒子的扩展比率。。*/-->
+
+<!--/*注意：如果元素不是弹性盒对象的元素，则 flex-grow 属性不起作用。*/-->
+<!--/*#main div:nth-of-type(1) {flex-grow: 3;}*/-->
+<!--/*#main div:nth-of-type(2) {flex-grow: 3;}*/-->
+<!--/*#main div:nth-of-type(3) {flex-grow: 3;}*/-->
+<!--/*#main div:nth-of-type(4) {flex-grow: 1;}*/-->
+<!--/*#main div:nth-of-type(5) {flex-grow: 3;}*/-->
+
+
+<!--/*必须加上宽度才能实现*/-->
+<!--/*flex-shrink的默认值为1，如果没有显示定义该属性，将会自动按照默认值1在所有因子相加之后计算比率来进行空间收缩。*/-->
+
+<!--/*本例中A、B、C 显式定义了 flex-shrink 为 1，D、E 定义了 flex-shrink 为 2，所以计算出来总共将剩余空间分成了 7 份，其中 A、B、C 占 1 份，D、E 占 2 份，即1:1:1:2:2*/-->
+<!--/*#main div{*/-->
+<!--/*flex-basis: 120px;*/-->
+<!--/*border: 3px solid rgba(0,0,0,.2);*/-->
+<!--/*}*/-->
+<!--/*.box1 {*/-->
+<!--/*flex-shrink: 1;*/-->
+<!--/*}*/-->
+
+<!--/*.box2 {*/-->
+<!--/*flex-shrink: 3;*/-->
+<!--/*}*/-->
+

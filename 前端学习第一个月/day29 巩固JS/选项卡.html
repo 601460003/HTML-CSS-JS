@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       #div1 div{
+            width: 200px;
+            height: 200px;
+            background: gray;
+            display: none;
+        }
+        #div1 .active{
+            background:red;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <input class="active" type="button" value="教育">
+    <input type="button" value="招生">
+    <input type="button" value="培训">
+    <input type="button" value="出国">
+    <div style="display: block">222</div>
+    <div>2223354</div>
+    <div>4444</div>
+    <div>11111</div>
+</div>
+
+<script>
+    window.onload=function () {
+        var odiv=document.getElementById('div1');
+        var abtn=odiv.getElementsByTagName('input');
+        var adiv=odiv.getElementsByTagName('div');
+
+        for (var i=0;i<abtn.length;i++)
+        {
+            abtn[i].index=i;                                    //利用JS给index命名=i，来操作div的显示效果
+
+            abtn[i].onmouseover=function ()
+             {                                                      //this指当前发生的元素 在函数里面
+               for (var i=0;i<abtn.length;i++)                     //思路很好 遇到问题 直接折射方法
+               {
+                   abtn[i].className='';
+                   adiv[i].style.display='none';                   //使用循环后变量后面必须要循环元素[i].
+               }
+               this.className='active';
+               adiv[this.index].style.display='block';
+            }
+        }
+    }
+</script>
+</body>
+</html>

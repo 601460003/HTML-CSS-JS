@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两栏布局float + margin</title>
+</head>
+<body>
+
+<div class="left">定宽</div>
+<div class="right">自适应</div>
+<div class="footer"> 长方形</div>
+
+<style>
+    .left{
+        width: 200px;
+        height: 600px;
+        background: red;
+        text-align: center;
+        line-height: 600px;
+        color: #fff;
+        display: inline;
+    }
+
+    .right{
+        display: inline;
+        margin-left: 210px;
+        height: 600px;
+        background: yellow;
+        text-align: center;
+        line-height: 600px;
+        padding: 1em;
+
+    }
+    .footer{
+        background: #3b5998;
+        max-width: 600px;
+        margin: 0 auto;
+
+    }
+
+</style>
+
+</body>
+</html>

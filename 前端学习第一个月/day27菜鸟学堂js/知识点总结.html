@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+1.document.getElementById("demo").innerHTML=Date();
+innerHTML在JS是双向功能：获取对象的内容 或 向对象插入内容；
+function getInnerHTML(){
+alert(document.getElementById("test").innerHTML);
+document.getElementById("test").innerHTML = "<strong>设置标签的html内容</strong
+        }
+        2. document.getElementById("some id")。这个方法是 HTML DOM 中定义的。
+
+        3.事件书写三件套
+        第一 function changeImage（）
+        第二 设 var elemt=document.getelementbyid（'a'）;
+        直接拿elemt.style.width('')直接修改样式
+        第三使用if 或者 for 来判断
+        第四if常用语句有 if...else if...else if...else 如果..否则
+
+        4.插入JS 、head.body.外部的 JavaScript三种途径
+
+        5.输出内容使用 window.alert() 弹出警告框。
+        使用 document.write() 方法将内容写到 HTML 文档中。
+        **使用 innerHTML 写入到 HTML 元素。
+        使用 console.log() 写入到浏览器的控制台
+        。
+        6.修改元素如果直接修改 则直接.innerHTML
+        document.getElementById("test").innerHTML = "<strong>设置标签的html内容</strong，
+        修改属性则： HTML怎么写JS 就怎么写， 比如 vavul出来的文字 就直接X.vavul=？就可以了
+
+        7.JavaScript 语法：字符串"John Doe"，数值888，，表达式5+6
+        对象（Object）定义的时一个对象，比如后裔的技能有QWER等
+        var length = 16; // Number 通过数字字面量赋值
+        var points = x * 10; // Number 通过表达式字面量赋值
+        var lastName = "Johnson"; // String 通过字符串字面量赋值
+        var cars = ["Saab", "Volvo", "BMW"]; // Array 通过数组字面量赋值
+        var person = {firstName:"John", lastName:"Doe"}; // Object 通过对象字面量赋值
+
+        8.语句：分号 ;结束
+
+        9.使用注释//，方便第二次阅读
+
+        10.变量比如X=10 用X赋值给10来保存字面量 var声明来创建变量
+
+        11.数组比如cars就是一个数组var cars=new Array["Saab","Volvo","BMW"];
+        变量名里面是一个大总体，数字里面包含很多总体里面的内容
+
+        12.JavaScript 对象有属性的东西 对象有它的属性，如重量和颜色等，方法有启动停止等:
+        person.firstName + " 现在 " + person.age + " 岁.";
+
+        13.JavaScript 函数 关键词 function
+        myFunction('Harry Potter','Wizard')
+        function myFunction(name,job){
+        alert("Welcome " + name + ", the " + job);
+        }
+        参数传递
+        return;退出函数，并不会计算 a 和 b 的总和
+        var 声明的时局部变量
+        全局变量
+
+        14.JavaScript 作用域
+        局部作用域：变量在声明的函数外不可以访问。就是不在function的花括号里面就不能使用
+
+        全局作用域: 网页中所有脚本和函数均可使用。就是var声明在第一，或者不在function里声明。
+        如果变量在函数内没有声明（没有使用 var 关键字），该变量为全局变量。
+
+        15.JavaScript 事件：常见的事件
+        onchange HTML 元素改变
+        onclick 用户点击 HTML 元素
+        onmouseover 用户在一个HTML元素上移动鼠标
+        onmouseout 用户从一个HTML元素上移开鼠标
+        onkeydown 用户按下键盘按键
+        onload 浏览器已完成页面的加载
+
+        16.运算符：
+        运算符 = 用于给 JavaScript 变量赋值。
+        算术运算符 + 用于把值加起来。
+        规则:如果把数字与字符串相加，结果将成为字符串！
+
+        17.运算符比较
+        逻辑运算符，
+        &&和
+        ||或者
+        ！不
+
+        18.条件语句： if...Else
+        var d = new Date();
+        var time = d.getHours(25);
+        if (time<10)
+        {document.write("<b>早上好</b>");
+} else if (time>=10 && time<16)
+{ document.write("<b>今天好</b>"); } else
+{ document.write("<b>晚上好!</b>"); }
+
+19.for循环：
+cars=["BMW","Volvo","Saab","Ford"];
+for (var i=0;i
+<cars.length
+;i++){
+document.write(cars[i] + "<br>");
+}
+
+20.break 语句用于跳出循环。
+
+continue 用于跳过循环中的一个迭代。
+
+21.JavaScript 检查错误： throw、try 和 catch
+try 语句测试代码块的错误。
+
+catch 语句处理错误。
+
+throw 语句创建自定义错误。
+
+finally 语句在 try 和 catch 语句之后，无论是否有触发异常，该语句都会执行。
+
+22.JavaScript 调试：
+F12
+
+23.变量声明提升：
+为了避免这些问题，通常我们在每个作用域开始前声明这些变量，这也是正常的 JavaScript 解析步骤，易于我们理解。
+
+24.赋值运算符应用错误：
+在常规的比较中，数据类型是被忽略的，以下 if 条件语句返回 true：
+if 条件语句返回 false (不是我们预期的)因为条件语句执行为 x 赋值 0，0 为 false:
+加法是两个数字相加。
+连接是两个字符串连接
+对浮点型数据的精确度都很难确定：
+
+25.中 this 表示当前对象的一个引用。
+
+26。闭包：就是子函数可以使用父函数的局部变量叫做闭包
+add变量可以作为一个函数使用。非常棒的部分是它可以访问函数上一层作用域的计数器。
+这个叫作 JavaScript 闭包。它使得函数拥有私有变量变成可能。
+var add = (function () {
+var counter = 2;
+return function () {return counter += 1;}
+})();
+function myFunction(){
+document.getElementById("demo").innerHTML = add();
+
+</body>
+</html>

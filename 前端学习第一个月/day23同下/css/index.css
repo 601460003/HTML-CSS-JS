@@ -1,0 +1,269 @@
+body{
+    background: #f4f5f5;
+    margin: 0;
+}
+.sishiwu{
+    text-decoration: none;
+    padding: 5px;
+    color: #007fff;
+}
+.title-passage span{
+    vertical-align: bottom;
+    color: #8f969c;
+}
+.nav{
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+}
+.nav-left{
+    width: 960px;
+    height: 60px;
+    background: white;
+    margin: 0 auto;
+
+}
+.nav-logo{
+    float: left;
+    margin-top: 10px;
+}
+.nav-left ul{
+    margin: 0;
+    padding: 0;
+}
+.nav-left li{
+    list-style-type: none;
+    float:left;
+}
+.nav-left a{
+    text-decoration: none;
+    margin-left: 36px;
+    color: #909090;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+.nav-right input{
+    height: 30px;
+    width: 140px;
+    padding-left: 10px;
+    margin-right: 15px;
+    margin-top: 12px;
+    border: 1px solid #f2f2f2;
+
+}
+.nav-right span{
+    font-size: 16px;
+    color: #007fff;
+    margin-right: 10px;
+}
+.nav-right{
+    float: right;
+}
+/*中间内容部分*/
+.main{
+    width: 960px;
+    background: #ab61e0;
+    margin: 80px auto ;
+}
+.main-left{
+    width: 700px;
+    background: #6ca1c0;
+    float: left;
+}
+.main-right{
+    height: 1000px;
+    float: right;
+}
+.list-top{
+    width: 240px;
+    height: 333px;
+    background:white;
+    margin-left: 20px;
+    margin-top: -24px;
+}
+.list-top-passage{
+    font-size: 14px;
+    color: #2e3135;
+    text-indent: 15px;
+    margin-top: 25px;
+    line-height: 10px;
+    padding-top: 10px;
+
+}
+.list-top-input input{
+    width: 208px;
+    height: 38px;
+    margin: 5px;
+    padding-left: 8px;
+    border:1px solid #f4f4f4;
+}
+.list-top-input a{
+    display: block;
+    width: 220px;
+    height: 36px;
+    background: #007fff;
+    text-align: center;
+    line-height: 36px;
+    margin-left: 5px;
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.list-top-footer span{
+    font-size: 12px;
+    color: #8f969c;
+    margin-left: 10px;
+}
+/*右边头部*/
+.list-main{
+    width: 240px;
+    height: 260px;
+    background:white;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+.list-main-top span{
+    font-size: 14px;
+    margin-left: 15px;
+}
+.list-main-top a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 90px;
+    color: #007fff;
+}
+.list-main-main li{
+    list-style-type: none;
+}
+.list-main-main ul{
+    margin-left: 5px;
+    padding: 0;
+    margin-top: 30px;
+}
+.list-main-main a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.list-main-main span{
+    margin-bottom: 13px;
+    margin-left: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 32px;
+    background: #f3f6f3;
+    display: inline-block;
+    border-radius: 33px;
+}
+.list-main-main span:hover{
+    background: #0c0;
+    color: white;
+}
+.title{
+    height: 58px;
+    background: white;
+    line-height: 58px;
+    border-bottom: 1px solid #f3f6f3;
+}
+.title span{
+    font-size: 16px;
+    margin-right: 120px;
+    margin-left: 20px;
+}
+.title a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #90979c;
+    text-indent: 50px;
+    margin-right: 10px;
+}
+.title-passage{
+    height: 116px;
+    background: white;
+    line-height: 13px;
+    padding-left: 18px;
+    padding-top: 12px;
+    border-bottom: 1px solid #f3f6f3;
+}
+.title-passage a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #8f969c;
+}
+.title-passage button{
+    height: 23px;
+    margin-right: -5px;
+    color: #909090 ;
+    font-weight: bold;
+    background: white;
+    border: 1px solid #f3f6f3;
+}
+.title-passage button img{
+    vertical-align: middle;
+}
+.title-passage p{
+    font-size: 0.9rem;
+     font-weight: 600;
+     line-height: 1.2;
+    color: #2e3135;
+}
+
+.list-top-footer img{
+    height: 22px;
+    width: 22px;
+    padding: 5px;
+    vertical-align: middle;
+
+}
+/*商务图标*/
+.down-logo{
+    width: 240px;
+    height: 240px;
+    background: white;
+    margin-left: 20px;
+    line-height: 55px;
+}
+.down-logo ul{
+    list-style-type: none;
+    padding-left: 25px;
+}
+.down-logo img{
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+.down-logo span{
+    color: #333;
+    font-size: 14px;
+    margin-left: 10px;
+}
+/*二维码*/
+.down-logo-a{
+    width: 240px;
+    height: 54px;
+    background: white;
+    margin-left: 20px;
+    margin-top: 15px;
+    line-height: 10px;
+    padding: 12px 0 12px 0;
+}
+.down-logo-a img{
+    width: 50px;
+    margin-left: 15px;
+    float: left;
+}
+.down-logo-s{
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.down-logo-x{
+    font-size: 12px;
+    color:  #909090;
+    margin-left: 55px;
+    padding-left: 22px;
+}
