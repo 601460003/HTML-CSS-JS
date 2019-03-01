@@ -1,0 +1,15 @@
+    let b=[];
+        this.tableData.forEach(a=>{
+          if(a.goodsName==e.goodsName){
+            if(a.count>1){
+              let  univalence=e.price/a.count;
+              a.count--;
+              debugger
+              b.push(a)
+            }
+          }else {
+            b.push(a)
+          }
+        })
+        this.tableData=b;
+        this. getallmoney();
