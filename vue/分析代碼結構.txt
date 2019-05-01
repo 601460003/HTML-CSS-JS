@@ -75,7 +75,7 @@ return this.user.a+""+this.user.b
 props属性 传入数据：对象
 专门的属性值：非常重要的东西
 在props：里面定义{msg：{type:string,}}
-default:默认就是当前这些文字
+default:默认就是当前这些文字必须是什么类型
 
 
                         

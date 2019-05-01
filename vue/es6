@@ -1,2 +1,0 @@
-map 遍历map .forEach(function(balue,index))
-箭头函数:箭头函数使用了定义时上下文的this，()=>{}
