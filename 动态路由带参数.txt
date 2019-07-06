@@ -1,0 +1,7 @@
+  <!--人气商品-->
+      <div class="getChoice" v-for="(hots,index) in getChoice" :key="index" @click="shopMSG(hots.id)" > 
+
+     Banners(str) {
+        let path = '/banners/' + str;
+        this.$router.push({path: path})
+      },
