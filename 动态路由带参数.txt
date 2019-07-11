@@ -4,4 +4,4 @@
      Banners(str) {
         let path = '/banners/' + str;
         this.$router.push({path: path})
-      },
+      },11
