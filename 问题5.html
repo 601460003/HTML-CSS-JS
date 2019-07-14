@@ -1,0 +1,129 @@
+<template>
+  <div>
+    <button @click="tijiao">提交</button>
+    <template>
+      <i-table width="90%" border :columns="columns2" :data="data3" @on-selection-change="zhang"></i-table>
+    </template>
+  </div>
+</template>
+<script>
+  export default {
+    data () {
+      return {
+        tempIdList:[], //临时保存表格的单选框id数组
+        arr:[],
+        columns2: [
+          {
+            type: 'selection',
+            width: 60,
+            align: 'center'
+          },
+          {
+            title: 'Name',
+            id:1,
+            key: 'name',
+            width: 100,
+            fixed: 'left',
+          },
+          {
+            id:12,
+            title: 'Age',
+            key: 'age',
+            width: 100
+          },
+          {
+            title: 'Province',
+            key: 'province',
+            width: 100
+          },
+          {
+            title: 'City',
+            key: 'city',
+            width: 100
+          },
+          {
+            title: 'Address',
+            key: 'address',
+            width: 200
+          },
+          {
+            title: 'Postcode',
+            key: 'zip',
+            width: 100
+          },
+          {
+            title: 'Action',
+            key: 'action',
+            fixed: 'right',
+            width: 120,
+            render (row, column, index) {
+              return `<i-button type="primary" size="small" >查看</i-button>`;
+            }
+          }
+        ],
+        data3: [
+          {
+            name: 'John Brown',
+            age: 18,
+            address: 'New York No. 1 Lake Park',
+            province: 'America',
+            city: 'New York',
+            zip: 100000
+          },
+          {
+            name: 'Jim Green',
+            age: 24,
+            address: 'Washington, D.C. No. 1 Lake Park',
+            province: 'America',
+            city: 'Washington, D.C.',
+            zip: 100000
+          },
+          {
+            name: 'Joe Black',
+            age: 30,
+            address: 'Sydney No. 1 Lake Park',
+            province: 'Australian',
+            city: 'Sydney',
+            zip: 100000
+          },
+          {
+            name: 'Jon Snow',
+            age: 26,
+            address: 'Ottawa No. 2 Lake Park',
+            province: 'Canada',
+            city: 'Ottawa',
+            zip: 100000
+          }
+        ]
+      }
+    },
+    methods:{
+      zhang(val){
+        this.tempIdList = val
+        console.log(val)
+      },
+      tijiao(){
+        if(this.tempIdList){
+          console.log(this.tempIdList.map(item=>{
+            return item.age
+          }));
+        }
+      },
+      show(data){
+        this.arr=[];
+        this.data3.forEach(item=>{
+          if(item.age==26){
+            this.arr.push(item)
+          }
+        })
+      },
+      del(){
+        //shanchu
+        this.show()
+      }
+    },
+    mounted(){
+      this.show()
+    }
+  }
+</script>
