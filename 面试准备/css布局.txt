@@ -1,0 +1,23 @@
+1.三列布局 有条件
+方法一：利用浮动特性，h1标题例子，浮动元素先占好位置
+方法二：绝对定位，和浮动一样，注意div顺序
+方法三：一个flex搞掂 ，超级简单，自适应flex：1；
+
+2.盒模型（四部分构成）：1.内容（content）2.内边距（padding）3.外边距（margin）4.border（边框）
+    box-sizing: content-box;默认不包含
+    box-sizing: border-box;==》border和padding则是被包含宽高之内IE6
+BFC（边距重叠解决方案）为父元素添加一个属性overflow：hidden
+
+3.js如何获取Dom的宽和高 
+
+4.DOM事件类 window>document>html>body>div>p
+
+5.Event对象的常见应用
+1.event.prenventDefault()阻止默认事件
+2.event.stopPropagation()阻止冒泡事件
+3.event.target指当前绑定的事件
+
+       弹窗颜色：
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
