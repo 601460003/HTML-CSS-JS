@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+    <div id="app">
+        <div>表格本地分页</div>
+        <el-table :data="tableData" border>
+            <el-table-column prop="id" label="序号"></el-table-column>
+            <el-table-column prop="name" label="名称"></el-table-column>
+            <el-table-column prop="age" label="年龄"></el-table-column>
+        </el-table>
+        <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="index" :page-sizes="[2, 4, 6, 8,10]" :page-size="size" layout="total, sizes, prev, pager, next, jumper" :total="tableCopyTableList.length">
+        </el-pagination>
+    </div>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+      el:'#app',
+        data(){
+          return{
+              tableData: [
+                  { id: 1, name: "start", age: 18 },
+                  { id: 2, name: "Rory", age: 18 },
+                  { id: 3, name: "Rosa", age: 18 },
+                  { id: 4, name: "Rosalia", age: 18 },
+                  { id: 5, name: "Rosalind", age: 18 },
+                  { id: 6, name: "Karin", age: 18 },
+                  { id: 7, name: "Kate", age: 18 },
+                  { id: 8, name: "Roseanne", age: 18 },
+                  { id: 9, name: "Rosemarie", age: 18 },
+                  { id: 10, name: "Rosemary", age: 18 },
+                  { id: 11, name: "Rosetta", age: 18 },
+                  { id: 12, name: "Arden", age: 18 },
+                  { id: 13, name: "Arendt", age: 18 },
+                  { id: 14, name: "Ares", age: 18 },
+                  { id: 15, name: "Penn", age: 18 },
+                  { id: 16, name: "Penney", age: 18 },
+                  { id: 17, name: "Pennie", age: 18 },
+                  { id: 18, name: "Pennington", age: 18 },
+                  { id: 19, name: "Bobette", age: 18 },
+                  { id: 20, name: "end", age: 18 }
+              ],
+              tableCopyTableList: [],
+              index: 1,
+              size: 10
+          }
+        },
+
+        created() {
+            // 初始化数据
+            this.tableCopyTableList = JSON.parse(JSON.stringify(this.tableData));
+            this.tableData = this.paging(this.size, this.index);
+        },
+        methods: {
+            // 页数改变事件
+            handleSizeChange(size) {
+                this.size = size;
+                this.tableData = this.paging(size, this.index);
+            },
+            // 页码改变事件
+            handleCurrentChange(current) {
+                this.index = current;
+                this.tableData = this.paging(this.size, current);
+            },
+            // 本地分页的方法
+            paging(size, current) {
+                const tableList = JSON.parse(JSON.stringify(this.tableCopyTableList));
+                const tablePush = [];
+                tableList.forEach((item, index) => {
+                    if (size * (current - 1) <= index && index <= size * current - 1) {
+                        tablePush.push(item);
+                    }
+                });
+                return tablePush;
+            }
+        },
+    })
+</script>
+</body>
+</html>

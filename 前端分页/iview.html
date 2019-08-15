@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+
+</head>
+<body>
+<div id="app">
+    <div class="title">
+        <div class="container_table">
+            <el-table :data="tableData.slice((currentPage-1)*pagesize,currentPage*pagesize)">
+                <el-table-column prop="appname"></el-table-column>
+            </el-table>
+            <el-pagination class="fy"
+                           layout="prev, pager, next"
+                           @current-change="current_change"
+                           :total="total"
+                           background
+            >
+            </el-pagination>
+        </div>
+</div>
+</div>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+      data(){
+          return{
+              total: 100,//默认数据总数
+              pagesize: 10,//每页的数据条数
+              currentPage: 1,//默认开始页面
+              tableData: [
+                  {appname: '1喵喵直播'},
+                  {appname: '2喵喵直播'},
+                  {appname: '3喵喵直播'},
+                  {appname: '4喵喵直播'},
+                  {appname: '5喵喵直播'},
+                  {appname: '6喵喵直播'},
+                  {appname: '7喵喵直播'},
+                  {appname: '8喵喵直播'},
+                  {appname: '9喵喵直播'},
+                  {appname: '10喵喵直播'},
+                  {appname: '11喵喵直播'},
+                  {appname: '12喵喵直播'},
+                  {appname: '13喵喵直播'},
+                  {appname: '14喵喵直播'},
+                  {appname: '15喵喵直播'},
+                  {appname: '16喵喵直播'},
+                  {appname: '17喵喵直播'},
+                  {appname: '18喵喵直播'},
+                  {appname: '19喵喵直播'},
+                  {appname: '20喵喵直播'},
+                  {appname: '21喵喵直播'},
+                  {appname: '22喵喵直播'},
+                  {appname: '23喵喵直播'},
+                  {appname: '24喵喵直播'},
+                  {appname: '25喵喵直播'},
+                  {appname: '26喵喵直播'},
+                  {appname: '27喵喵直播'},
+                  {appname: '28喵喵直播'},
+                  {appname: '29喵喵直播'},
+                  {appname: '30喵喵直播'},
+                  {appname: '31喵喵直播'},
+                  {appname: '32喵喵直播'},
+              ]
+          }
+      },
+        mounted() {
+            this.total = this.tableData.length;
+        },
+        methods: {
+            // 当前页
+            current_change(currentPage) {
+                this.currentPage = currentPage;
+            }
+        },
+    })
+</script>
+
+</body>
+</html>
